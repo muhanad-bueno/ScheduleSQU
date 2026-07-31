@@ -1,0 +1,4961 @@
+{
+  "version": "1726862400000",
+  "courses": [
+    {
+      "id": "ARAB1018",
+      "code": "ARAB1018",
+      "name": "An Introduction to Arabic Language and Literature",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "To Be announced",
+          "time": "MON 14:15:00-15:35:00 | WED 14:15:00-15:35:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        },
+        {
+          "section": "02",
+          "instructor": "AbdalRahman Mohammad Teama",
+          "time": "MON 10:00:00-11:20:00 | WED 10:00:00-11:20:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "ARAB1019",
+      "code": "ARAB1019",
+      "name": "Arabic For Non Arabic Speaker",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "OMAR AHAMEED SDIQ",
+          "time": "THU 08:00:00-09:20:00 | TUE 10:00:00-11:20:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "ARAB1021",
+      "code": "ARAB1021",
+      "name": "Language Skills for Law",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "MOHAMED SULAIMAN MOHAMED AL AMIRI",
+          "time": "MON 12:00:00-13:20:00 | WED 12:00:00-13:20:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        },
+        {
+          "section": "02",
+          "instructor": "To Be announced",
+          "time": "MON 16:15:00-17:35:00 | WED 16:15:00-17:35:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        },
+        {
+          "section": "03",
+          "instructor": "MOHAMED SULAIMAN MOHAMED AL AMIRI",
+          "time": "THU 08:00:00-09:20:00 | TUE 10:00:00-11:20:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "ARAB1060",
+      "code": "ARAB1060",
+      "name": "Arabic",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "To Be announced",
+          "time": "SUN 10:00:00-11:20:00 | TUE 10:00:00-11:20:00",
+          "building": "Distance Learning",
+          "exam": ""
+        },
+        {
+          "section": "02",
+          "instructor": "TAREK SOLIMAN MOSTAFA",
+          "time": "SUN 14:15:00-15:35:00 | TUE 14:15:00-15:35:00",
+          "building": "Distance Learning",
+          "exam": ""
+        },
+        {
+          "section": "03",
+          "instructor": "MHD NOUREDDIN MHD EID ALMUNJED",
+          "time": "MON 10:00:00-11:20:00 | WED 10:00:00-11:20:00",
+          "building": "Distance Learning",
+          "exam": ""
+        },
+        {
+          "section": "04",
+          "instructor": "OMAR AHAMEED SDIQ",
+          "time": "MON 12:00:00-13:20:00 | WED 12:00:00-13:20:00",
+          "building": "Distance Learning",
+          "exam": ""
+        },
+        {
+          "section": "05",
+          "instructor": "EISA SAID SALIM SALIM",
+          "time": "SUN 16:15:00-17:35:00 | TUE 16:15:00-17:35:00",
+          "building": "Distance Learning",
+          "exam": ""
+        },
+        {
+          "section": "06",
+          "instructor": "ISSA MOHAMMED MUSLEM AL RAWAHI",
+          "time": "MON 16:15:00-17:35:00 | WED 16:15:00-17:35:00",
+          "building": "Distance Learning",
+          "exam": ""
+        },
+        {
+          "section": "07",
+          "instructor": "ISSA MOHAMMED MUSLEM AL RAWAHI",
+          "time": "MON 14:15:00-15:35:00 | WED 14:15:00-15:35:00",
+          "building": "Distance Learning",
+          "exam": ""
+        },
+        {
+          "section": "08",
+          "instructor": "Maryam Hamed Mohammed Al Husaini",
+          "time": "THU 08:00:00-09:20:00 | TUE 10:00:00-11:20:00",
+          "building": "Distance Learning",
+          "exam": ""
+        },
+        {
+          "section": "09",
+          "instructor": "MAHMOOD SULAIMAN ABDULLAH AL RIYAMI",
+          "time": "MON 14:15:00-15:35:00 | WED 14:15:00-15:35:00",
+          "building": "Distance Learning",
+          "exam": ""
+        },
+        {
+          "section": "10",
+          "instructor": "TAREK SOLIMAN MOSTAFA",
+          "time": "SUN 12:00:00-13:20:00 | TUE 12:00:00-13:20:00",
+          "building": "Distance Learning",
+          "exam": ""
+        },
+        {
+          "section": "11",
+          "instructor": "Ahmed Khalifa Musabah almaqbali",
+          "time": "SUN 14:15:00-15:35:00 | TUE 14:15:00-15:35:00",
+          "building": "Distance Learning",
+          "exam": ""
+        },
+        {
+          "section": "12",
+          "instructor": "Ahmed Khalifa Musabah almaqbali",
+          "time": "SUN 16:15:00-17:35:00 | TUE 16:15:00-17:35:00",
+          "building": "Distance Learning",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "ARAB1357",
+      "code": "ARAB1357",
+      "name": "The Art of Autobiography",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "To Be announced",
+          "time": "THU 08:00:00-09:20:00 | TUE 10:00:00-11:20:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "ARAB1358",
+      "code": "ARAB1358",
+      "name": "Literature of Exile",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "SANA TAHER ALI AL-JAMALI",
+          "time": "SUN 14:15:00-15:35:00 | TUE 14:15:00-15:35:00",
+          "building": "Arts",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "ARAB1475",
+      "code": "ARAB1475",
+      "name": "Quranic and Prophetic statement",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "MHD NOUREDDIN MHD EID ALMUNJED",
+          "time": "MON 14:15:00-15:35:00 | WED 14:15:00-15:35:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "ARAB2031",
+      "code": "ARAB2031",
+      "name": "Arabic Language Skills (1)",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "To Be announced",
+          "time": "MON 14:15:00-15:35:00 | WED 14:15:00-15:35:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        },
+        {
+          "section": "02",
+          "instructor": "HAMOOD MOHAMMED ABDULLAH AL- RUMHI",
+          "time": "MON 10:00:00-11:20:00 | WED 10:00:00-11:20:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        },
+        {
+          "section": "03",
+          "instructor": "To Be announced",
+          "time": "MON 08:00:00-09:20:00 | WED 08:00:00-09:20:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        },
+        {
+          "section": "04",
+          "instructor": "To Be announced",
+          "time": "MON 14:15:00-15:35:00 | WED 14:15:00-15:35:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        },
+        {
+          "section": "05",
+          "instructor": "To Be announced",
+          "time": "SUN 08:00:00-09:20:00 | TUE 08:00:00-09:20:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        },
+        {
+          "section": "06",
+          "instructor": "To Be announced",
+          "time": "THU 08:00:00-09:20:00 | TUE 10:00:00-11:20:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        },
+        {
+          "section": "07",
+          "instructor": "HAMOOD MOHAMMED ABDULLAH AL- RUMHI",
+          "time": "SUN 12:00:00-13:20:00 | TUE 12:00:00-13:20:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "ARAB2032",
+      "code": "ARAB2032",
+      "name": "Arabic Language Skills (2)",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "ZAHIR MARHOON KHUSAIF AL- DAWOODI",
+          "time": "MON 12:00:00-13:20:00 | WED 12:00:00-13:20:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        },
+        {
+          "section": "02",
+          "instructor": "To Be announced",
+          "time": "SUN 10:00:00-11:20:00 | THU 10:00:00-11:20:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        },
+        {
+          "section": "03",
+          "instructor": "MAHMOOD SULAIMAN ABDULLAH AL RIYAMI",
+          "time": "SUN 12:00:00-13:20:00 | TUE 12:00:00-13:20:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        },
+        {
+          "section": "04",
+          "instructor": "Mohammed Khalfan Subeih AL HINAI",
+          "time": "SUN 14:15:00-15:35:00 | TUE 14:15:00-15:35:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        },
+        {
+          "section": "05",
+          "instructor": "Mohammed Khalfan Subeih AL HINAI",
+          "time": "SUN 16:15:00-17:35:00 | TUE 16:15:00-17:35:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "ARAB2033",
+      "code": "ARAB2033",
+      "name": "Arabic language skills for early education",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "To Be announced",
+          "time": "MON 08:00:00-09:50:00 | WED 08:00:00-09:50:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "ARAB2240",
+      "code": "ARAB2240",
+      "name": "Introduction to Linguistics",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "HAMOOD MOHAMMED ABDULLAH AL- RUMHI",
+          "time": "SUN 14:15:00-15:35:00 | TUE 14:15:00-15:35:00",
+          "building": "Arts",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "ARAB2346",
+      "code": "ARAB2346",
+      "name": "Pre-Islamic Literature",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "Essa Abdul Shafi Ibrahim EL masri",
+          "time": "THU 08:00:00-09:20:00 | TUE 10:00:00-11:20:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "ARAB2350",
+      "code": "ARAB2350",
+      "name": "Ancient poetry [1]",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "MOHAMED MOUSTAFA ALI HASSANEIN",
+          "time": "MON 14:15:00-15:35:00 | WED 14:15:00-15:35:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        },
+        {
+          "section": "02",
+          "instructor": "To Be announced",
+          "time": "MON 14:15:00-15:35:00 | WED 14:15:00-15:35:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        },
+        {
+          "section": "03",
+          "instructor": "To Be announced",
+          "time": "SUN 12:00:00-13:20:00 | TUE 12:00:00-13:20:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        },
+        {
+          "section": "04",
+          "instructor": "To Be announced",
+          "time": "SUN 12:00:00-13:20:00 | TUE 12:00:00-13:20:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "ARAB2371",
+      "code": "ARAB2371",
+      "name": "Introduction to Linguistics",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "TAREK SOLIMAN MOSTAFA",
+          "time": "MON 16:15:00-17:35:00 | WED 16:15:00-17:35:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        },
+        {
+          "section": "02",
+          "instructor": "AbdalRahman Mohammad Teama",
+          "time": "SUN 16:15:00-17:35:00 | TUE 16:15:00-17:35:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        },
+        {
+          "section": "03",
+          "instructor": "MAHMOOD SULAIMAN ABDULLAH AL RIYAMI",
+          "time": "MON 16:15:00-17:35:00 | WED 16:15:00-17:35:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        },
+        {
+          "section": "04",
+          "instructor": "To Be announced",
+          "time": "SUN 12:00:00-13:20:00 | TUE 12:00:00-13:20:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "ARAB2475",
+      "code": "ARAB2475",
+      "name": "Classical Literary Criticism",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "Essa Abdul Shafi Ibrahim EL masri",
+          "time": "MON 14:15:00-15:35:00 | WED 14:15:00-15:35:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        },
+        {
+          "section": "02",
+          "instructor": "To Be announced",
+          "time": "SUN 12:00:00-13:20:00 | TUE 12:00:00-13:20:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "ARAB2793",
+      "code": "ARAB2793",
+      "name": "Research Methodology",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "To Be announced",
+          "time": "MON 10:00:00-11:50:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        },
+        {
+          "section": "02",
+          "instructor": "To Be announced",
+          "time": "THU 08:00:00-09:50:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        },
+        {
+          "section": "03",
+          "instructor": "To Be announced",
+          "time": "WED 10:00:00-11:50:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        },
+        {
+          "section": "04",
+          "instructor": "Essa Abdul Shafi Ibrahim EL masri",
+          "time": "SUN 16:15:00-18:05:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "ARAB3000",
+      "code": "ARAB3000",
+      "name": "Arabic Communicatio n",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "ZAHIR MARHOON KHUSAIF AL- DAWOODI",
+          "time": "SUN 08:00:00-09:20:00 | TUE 08:00:00-09:20:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "ARAB3117",
+      "code": "ARAB3117",
+      "name": "Syntax and Morphology (2)",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "MOHAMMED SALEH ALI ALSHIZAWI",
+          "time": "MON 12:00:00-13:50:00 | WED 12:00:00-13:50:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        },
+        {
+          "section": "02",
+          "instructor": "MOHAMMED SALEH ALI ALSHIZAWI",
+          "time": "SUN 08:00:00-09:50:00 | TUE 08:00:00-09:50:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "ARAB3348",
+      "code": "ARAB3348",
+      "name": "Abbasid Literature",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "Essa Abdul Shafi Ibrahim EL masri",
+          "time": "MON 10:00:00-11:20:00 | WED 10:00:00-11:20:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        },
+        {
+          "section": "02",
+          "instructor": "To Be announced",
+          "time": "SUN 10:00:00-11:20:00 | THU 10:00:00-11:20:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "ARAB3350",
+      "code": "ARAB3350",
+      "name": "Literature of Oman and the Gulf",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "ALI QASIM MUSABAH AL- KALBANI",
+          "time": "SUN 12:00:00-13:20:00 | TUE 12:00:00-13:20:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        },
+        {
+          "section": "02",
+          "instructor": "ALI QASIM MUSABAH AL- KALBANI",
+          "time": "MON 12:00:00-13:20:00 | WED 12:00:00-13:20:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        },
+        {
+          "section": "03",
+          "instructor": "To Be announced",
+          "time": "SUN 16:15:00-17:35:00 | TUE 16:15:00-17:35:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        },
+        {
+          "section": "04",
+          "instructor": "AHMED YOUSSEF",
+          "time": "MON 14:15:00-15:35:00 | WED 14:15:00-15:35:00",
+          "building": "Arts",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "ARAB3476",
+      "code": "ARAB3476",
+      "name": "Modern Literary Criticism",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "AHMED YOUSSEF",
+          "time": "SUN 08:00:00-09:20:00 | TUE 08:00:00-09:20:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        },
+        {
+          "section": "02",
+          "instructor": "ALI QASIM MUSABAH AL- KALBANI",
+          "time": "MON 10:00:00-11:20:00 | WED 10:00:00-11:20:00",
+          "building": "Arts",
+          "exam": ""
+        },
+        {
+          "section": "03",
+          "instructor": "SANA TAHER ALI AL-JAMALI",
+          "time": "MON 10:00:00-11:20:00 | WED 10:00:00-11:20:00",
+          "building": "No Room Available",
+          "exam": ""
+        },
+        {
+          "section": "04",
+          "instructor": "AbdelGhani Bara",
+          "time": "MON 08:00:00-09:20:00 | WED 08:00:00-09:20:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "ARAB3563",
+      "code": "ARAB3563",
+      "name": "Andalusian and Moroccan literature",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "AHMED YOUSSEF",
+          "time": "SUN 10:00:00-11:20:00 | THU 10:00:00-11:20:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        },
+        {
+          "section": "02",
+          "instructor": "MOHAMED MOUSTAFA ALI HASSANEIN",
+          "time": "MON 10:00:00-11:20:00 | WED 10:00:00-11:20:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "ARAB3565",
+      "code": "ARAB3565",
+      "name": "Arabic rhetoric [2]",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "To Be announced",
+          "time": "SUN 08:00:00-09:20:00 | TUE 08:00:00-09:20:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        },
+        {
+          "section": "02",
+          "instructor": "EHSAN SADIQ MOHAMED AL ALAWATI",
+          "time": "MON 08:00:00-09:20:00 | WED 08:00:00-09:20:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "ARAB3570",
+      "code": "ARAB3570",
+      "name": "Prosody",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "FAYZ SOBHY ABDELSALAM TORKY",
+          "time": "MON 12:00:00-13:20:00 | WED 12:00:00-13:20:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        },
+        {
+          "section": "02",
+          "instructor": "To Be announced",
+          "time": "SUN 12:00:00-13:20:00 | TUE 12:00:00-13:20:00",
+          "building": "E Common Teaching",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "ARAB3582",
+      "code": "ARAB3582",
+      "name": "Introduction to syntax",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "FAYZ SOBHY ABDELSALAM TORKY",
+          "time": "MON 14:15:00-15:35:00 | WED 14:15:00-15:35:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "ARAB3683",
+      "code": "ARAB3683",
+      "name": "Rhetoric (1)",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "To Be announced",
+          "time": "MON 08:00:00-09:20:00 | WED 08:00:00-09:20:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        },
+        {
+          "section": "02",
+          "instructor": "EHSAN SADIQ MOHAMED AL ALAWATI",
+          "time": "MON 10:00:00-11:20:00 | WED 10:00:00-11:20:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        },
+        {
+          "section": "03",
+          "instructor": "MOHAMED MOUSTAFA ALI HASSANEIN",
+          "time": "SUN 12:00:00-13:20:00 | TUE 12:00:00-13:20:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "ARAB4119",
+      "code": "ARAB4119",
+      "name": "Syntax and Morphology (4)",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "To Be announced",
+          "time": "MON 14:15:00-16:05:00 | WED 14:15:00-16:05:00",
+          "building": "Arts",
+          "exam": ""
+        },
+        {
+          "section": "02",
+          "instructor": "FAYZ SOBHY ABDELSALAM TORKY",
+          "time": "SUN 10:00:00-11:50:00 | THU 10:00:00-11:50:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        },
+        {
+          "section": "03",
+          "instructor": "To Be announced",
+          "time": "THU 08:00:00-09:50:00 | TUE 10:00:00-11:50:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        },
+        {
+          "section": "04",
+          "instructor": "To Be announced",
+          "time": "MON 12:00:00-13:50:00 | WED 12:00:00-13:50:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "ARAB4122",
+      "code": "ARAB4122",
+      "name": "Functional Grammar",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "MOHAMED SULAIMAN MOHAMED AL AMIRI",
+          "time": "MON 08:00:00-09:20:00 | WED 08:00:00-09:20:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        },
+        {
+          "section": "02",
+          "instructor": "To Be announced",
+          "time": "MON 08:00:00-09:20:00 | WED 08:00:00-09:20:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        },
+        {
+          "section": "03",
+          "instructor": "MHD NOUREDDIN MHD EID ALMUNJED",
+          "time": "SUN 14:15:00-15:35:00 | TUE 14:15:00-15:35:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "ARAB4238",
+      "code": "ARAB4238",
+      "name": "Text Linguistics",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "ZAHIR MARHOON KHUSAIF AL- DAWOODI",
+          "time": "SUN 12:00:00-13:20:00 | TUE 12:00:00-13:20:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        },
+        {
+          "section": "02",
+          "instructor": "AbdalRahman Mohammad Teama",
+          "time": "SUN 14:15:00-15:35:00 | TUE 14:15:00-15:35:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "ARAB4351",
+      "code": "ARAB4351",
+      "name": "The Comparative Literature",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "EHSAN SADIQ MOHAMED AL ALAWATI",
+          "time": "THU 08:00:00-09:20:00 | TUE 10:00:00-11:20:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        },
+        {
+          "section": "02",
+          "instructor": "MAHROUS MHUMOOD ABD ALWAHAB ALQALILI",
+          "time": "MON 10:00:00-11:20:00 | WED 10:00:00-11:20:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        },
+        {
+          "section": "03",
+          "instructor": "MAHROUS MHUMOOD ABD ALWAHAB ALQALILI",
+          "time": "SUN 14:15:00-15:35:00 | TUE 14:15:00-15:35:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "ARAB4752",
+      "code": "ARAB4752",
+      "name": "Modern Peetryand and Contemporary",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "SANA TAHER ALI AL-JAMALI",
+          "time": "SUN 12:00:00-13:20:00 | TUE 12:00:00-13:20:00",
+          "building": "Arts",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "ARAB4755",
+      "code": "ARAB4755",
+      "name": "Literature of Oman and the Gulf",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "AbdelGhani Bara",
+          "time": "SUN 14:15:00-15:35:00 | TUE 14:15:00-15:35:00",
+          "building": "No Room Available",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "ARAB4766",
+      "code": "ARAB4766",
+      "name": "Modern literary criticism",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "MAHROUS MHUMOOD ABD ALWAHAB ALQALILI",
+          "time": "SUN 16:15:00-17:35:00 | TUE 16:15:00-17:35:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "ARAB4773",
+      "code": "ARAB4773",
+      "name": "Samantics",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "HAMOOD MOHAMMED ABDULLAH AL- RUMHI",
+          "time": "MON 12:00:00-13:20:00 | WED 12:00:00-13:20:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "ARAB4789",
+      "code": "ARAB4789",
+      "name": "Grammar (2) - Accusatives",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "KHALID SULAIMAN MUHANNA AL- KINDI",
+          "time": "MON 14:15:00-16:05:00 | WED 14:15:00-16:05:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "ARAB4790",
+      "code": "ARAB4790",
+      "name": "Morphological exercises",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "MOHAMMED SALEH ALI ALSHIZAWI",
+          "time": "MON 10:00:00-11:50:00 | WED 10:00:00-11:50:00",
+          "building": "No Room Available",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "ARAB4794",
+      "code": "ARAB4794",
+      "name": "Gradation Project",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "ALI QASIM MUSABAH AL- KALBANI",
+          "time": "THU 10:00:00-10:50:00",
+          "building": "Arts",
+          "exam": ""
+        },
+        {
+          "section": "02",
+          "instructor": "SANA TAHER ALI AL-JAMALI",
+          "time": "MON 12:00:00-12:50:00",
+          "building": "Arts",
+          "exam": ""
+        },
+        {
+          "section": "03",
+          "instructor": "MOHAMED SULAIMAN MOHAMED AL AMIRI",
+          "time": "THU 10:00:00-10:50:00",
+          "building": "Arts",
+          "exam": ""
+        },
+        {
+          "section": "04",
+          "instructor": "AbdalRahman Mohammad Teama",
+          "time": "THU 10:00:00-10:50:00",
+          "building": "Arts",
+          "exam": ""
+        },
+        {
+          "section": "05",
+          "instructor": "MOHAMED MOUSTAFA ALI HASSANEIN",
+          "time": "THU 10:00:00-10:50:00",
+          "building": "Arts",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "ARCH1130",
+      "code": "ARCH1130",
+      "name": "Prehistoric Archaeology",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "KHALED AHMED MAHMOUD",
+          "time": "MON 10:00:00-11:20:00 | WED 10:00:00-11:20:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "ARCH3221",
+      "code": "ARCH3221",
+      "name": "Managemant of Heritage and Archaeology",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "MOHAMMED ALI KHAMIS AL- BELUSHI",
+          "time": "MON 12:00:00-13:20:00 | WED 12:00:00-13:20:00",
+          "building": "Arts",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "ARCH3300",
+      "code": "ARCH3300",
+      "name": "Special Topic in Oman Heritage",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "MOHAMED A. HAMAD HESEIN",
+          "time": "SUN 10:00:00-11:20:00 | THU 10:00:00-11:20:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "ARCH4100",
+      "code": "ARCH4100",
+      "name": "Archaeological Texts in English",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "NASSER SAID ALI AL-JAHWARI",
+          "time": "SUN 14:15:00-15:35:00 | TUE 14:15:00-15:35:00",
+          "building": "Arts",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "ARCH4500",
+      "code": "ARCH4500",
+      "name": "Ancient Towns and Settlements in Oman",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "NASSER SAID ALI AL-JAHWARI",
+          "time": "SUN 12:00:00-13:20:00 | TUE 12:00:00-13:20:00",
+          "building": "Arts",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "ARCH4550",
+      "code": "ARCH4550",
+      "name": "Special Topic in the Archaeology of Arabia",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "KHALED AHMED MAHMOUD",
+          "time": "SUN 12:00:00-13:20:00 | TUE 12:00:00-13:20:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "ENGL2101",
+      "code": "ENGL2101",
+      "name": "Grammar in Context",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "SAKINA MRANI AL AOUI",
+          "time": "MON 12:00:00-13:50:00 | WED 12:00:00-13:50:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        },
+        {
+          "section": "02",
+          "instructor": "FAISAL SAEED ALI AL- MAAMARI",
+          "time": "SUN 12:00:00-13:50:00 | TUE 12:00:00-13:50:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        },
+        {
+          "section": "03",
+          "instructor": "SARA BAKHIT OBAID AL SHEYADI",
+          "time": "SUN 08:00:00-09:50:00 | TUE 08:00:00-09:50:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        },
+        {
+          "section": "04",
+          "instructor": "To Be announced",
+          "time": "MON 14:15:00-16:05:00 | WED 14:15:00-16:05:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "ENGL2102",
+      "code": "ENGL2102",
+      "name": "Effective Writing",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "To Be announced",
+          "time": "SUN 10:00:00-11:50:00 | THU 10:00:00-11:50:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        },
+        {
+          "section": "02",
+          "instructor": "MARYAM ALI ZAHIR AL-HINAI",
+          "time": "SUN 12:00:00-13:50:00 | TUE 12:00:00-13:50:00",
+          "building": "Arts",
+          "exam": ""
+        },
+        {
+          "section": "03",
+          "instructor": "To Be announced",
+          "time": "MON 10:00:00-11:50:00 | WED 10:00:00-11:50:00",
+          "building": "Arts",
+          "exam": ""
+        },
+        {
+          "section": "04",
+          "instructor": "To Be announced",
+          "time": "SUN 14:15:00-16:05:00 | TUE 14:15:00-16:05:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        },
+        {
+          "section": "05",
+          "instructor": "To Be announced",
+          "time": "MON 14:15:00-16:05:00 | WED 14:15:00-16:05:00",
+          "building": "Arts",
+          "exam": ""
+        },
+        {
+          "section": "06",
+          "instructor": "To Be announced",
+          "time": "MON 16:15:00-18:05:00 | WED 16:15:00-18:05:00",
+          "building": "Arts",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "ENGL2110",
+      "code": "ENGL2110",
+      "name": "Language and Phonetics",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "HAMMAL SALEH MOHAMED WALI MOHAMED AL BALUSHI",
+          "time": "MON 10:00:00-11:50:00 | WED 10:00:00-10:50:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        },
+        {
+          "section": "02",
+          "instructor": "HAMMAL SALEH MOHAMED WALI MOHAMED AL BALUSHI",
+          "time": "MON 12:00:00-13:50:00 | WED 12:00:00-12:50:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        },
+        {
+          "section": "03",
+          "instructor": "KHALSA HAMED SALIM AL- AGHBARI",
+          "time": "MON 08:00:00-09:50:00 | WED 08:00:00-08:50:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        },
+        {
+          "section": "04",
+          "instructor": "AZZA NASSER SULAIMAN AL- KENDI",
+          "time": "SUN 08:00:00-09:50:00 | TUE 08:00:00-08:50:00",
+          "building": "Arts",
+          "exam": ""
+        },
+        {
+          "section": "05",
+          "instructor": "SARA BAKHIT OBAID AL SHEYADI",
+          "time": "MON 14:15:00-16:05:00 | WED 14:15:00-15:05:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        },
+        {
+          "section": "06",
+          "instructor": "To Be announced",
+          "time": "SUN 14:15:00-16:05:00 | TUE 14:15:00-15:05:00",
+          "building": "Arts",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "ENGL2134",
+      "code": "ENGL2134",
+      "name": "Critical Reading",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "To Be announced",
+          "time": "MON 08:00:00-09:50:00 | WED 08:00:00-09:50:00",
+          "building": "Arts",
+          "exam": ""
+        },
+        {
+          "section": "02",
+          "instructor": "KHALSA HAMED SALIM AL- AGHBARI",
+          "time": "MON 12:00:00-13:50:00 | WED 12:00:00-13:50:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        },
+        {
+          "section": "03",
+          "instructor": "KHALSA HAMED SALIM AL- AGHBARI",
+          "time": "SUN 12:00:00-13:50:00 | TUE 12:00:00-13:50:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "ENGL2141",
+      "code": "ENGL2141",
+      "name": "Introduction to Fiction",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "Patricia Geraldine Mc Manus",
+          "time": "SUN 10:00:00-11:20:00 | THU 10:00:00-11:20:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        },
+        {
+          "section": "02",
+          "instructor": "GERARD JEREMIAH DINEEN",
+          "time": "MON 12:00:00-13:20:00 | WED 12:00:00-13:20:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        },
+        {
+          "section": "03",
+          "instructor": "Patricia Geraldine Mc Manus",
+          "time": "MON 12:00:00-13:20:00 | WED 12:00:00-13:20:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        },
+        {
+          "section": "04",
+          "instructor": "GERARD JEREMIAH DINEEN",
+          "time": "SUN 14:15:00-15:35:00 | TUE 14:15:00-15:35:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "ENGL2224",
+      "code": "ENGL2224",
+      "name": "Introduction to Literature",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "To Be announced",
+          "time": "SUN 08:00:00-09:20:00 | TUE 08:00:00-09:20:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        },
+        {
+          "section": "02",
+          "instructor": "SANDHYA RAO MEHTA",
+          "time": "SUN 12:00:00-13:20:00 | TUE 12:00:00-13:20:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        },
+        {
+          "section": "03",
+          "instructor": "SANDHYA RAO MEHTA",
+          "time": "MON 14:15:00-15:35:00 | WED 14:15:00-15:35:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "ENGL2327",
+      "code": "ENGL2327",
+      "name": "Phonology and Morphology",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "SAID HUMAID ZAHRAN AL- JAHDHAMI",
+          "time": "SUN 10:00:00-11:20:00 | THU 10:00:00-11:20:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        },
+        {
+          "section": "02",
+          "instructor": "To Be announced",
+          "time": "THU 08:00:00-09:20:00 | TUE 10:00:00-11:20:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        },
+        {
+          "section": "03",
+          "instructor": "AZZA NASSER SULAIMAN AL- KENDI",
+          "time": "SUN 12:00:00-13:20:00 | TUE 12:00:00-13:20:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        },
+        {
+          "section": "04",
+          "instructor": "AZZA NASSER SULAIMAN AL- KENDI",
+          "time": "MON 14:15:00-15:35:00 | WED 14:15:00-15:35:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "ENGL3127",
+      "code": "ENGL3127",
+      "name": "Academic Writing",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "FAISAL SAEED ALI AL- MAAMARI",
+          "time": "MON 12:00:00-13:50:00 | WED 12:00:00-13:50:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        },
+        {
+          "section": "02",
+          "instructor": "MOHAMMED ALI KHALIFA AL- ALAWI",
+          "time": "MON 10:00:00-11:50:00 | WED 10:00:00-11:50:00",
+          "building": "Arts",
+          "exam": ""
+        },
+        {
+          "section": "03",
+          "instructor": "To Be announced",
+          "time": "MON 10:00:00-11:50:00 | WED 10:00:00-11:50:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        },
+        {
+          "section": "04",
+          "instructor": "MOHAMMED ALI KHALIFA AL- ALAWI",
+          "time": "MON 12:00:00-13:50:00 | WED 12:00:00-13:50:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        },
+        {
+          "section": "05",
+          "instructor": "To Be announced",
+          "time": "MON 12:00:00-13:50:00 | WED 12:00:00-13:50:00",
+          "building": "E Common Teaching",
+          "exam": ""
+        },
+        {
+          "section": "06",
+          "instructor": "To Be announced",
+          "time": "THU 08:00:00-09:50:00 | TUE 10:00:00-11:50:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        },
+        {
+          "section": "07",
+          "instructor": "MARYAM ALI ZAHIR AL-HINAI",
+          "time": "MON 12:00:00-13:50:00 | WED 12:00:00-13:50:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "ENGL3128",
+      "code": "ENGL3128",
+      "name": "Speaking",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "AZZA NASSER SULAIMAN AL- KENDI",
+          "time": "MON 10:00:00-11:50:00 | WED 10:00:00-11:50:00",
+          "building": "Arts",
+          "exam": ""
+        },
+        {
+          "section": "02",
+          "instructor": "To Be announced",
+          "time": "MON 14:15:00-16:05:00 | WED 14:15:00-16:05:00",
+          "building": "Arts",
+          "exam": ""
+        },
+        {
+          "section": "03",
+          "instructor": "To Be announced",
+          "time": "SUN 08:00:00-09:50:00 | TUE 08:00:00-09:50:00",
+          "building": "Arts",
+          "exam": ""
+        },
+        {
+          "section": "04",
+          "instructor": "To Be announced",
+          "time": "MON 14:15:00-16:05:00 | WED 14:15:00-16:05:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        },
+        {
+          "section": "05",
+          "instructor": "SAID HUMAID ZAHRAN AL- JAHDHAMI",
+          "time": "MON 12:00:00-13:50:00 | WED 12:00:00-13:50:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        },
+        {
+          "section": "06",
+          "instructor": "To Be announced",
+          "time": "MON 10:00:00-11:50:00 | WED 10:00:00-11:50:00",
+          "building": "Arts",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "ENGL3129",
+      "code": "ENGL3129",
+      "name": "Research Project",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "To Be announced",
+          "time": "SUN 12:00:00-13:50:00 | TUE 12:00:00-13:50:00 | WED 16:15:00-18:05:00",
+          "building": "Arts",
+          "exam": ""
+        },
+        {
+          "section": "02",
+          "instructor": "To Be announced",
+          "time": "MON 16:15:00-18:05:00 | SUN 16:15:00-18:05:00 | WED 16:15:00-18:05:00",
+          "building": "Arts",
+          "exam": ""
+        },
+        {
+          "section": "03",
+          "instructor": "HAMMAL SALEH MOHAMED WALI MOHAMED AL BALUSHI",
+          "time": "SUN 08:00:00-09:50:00 | THU 08:00:00-09:50:00 | TUE 08:00:00-09:50:00",
+          "building": "Arts",
+          "exam": ""
+        },
+        {
+          "section": "04",
+          "instructor": "ADEL SALEEM M. ABURADWAN",
+          "time": "SUN 10:00:00-11:50:00 | THU 10:00:00-11:50:00 | TUE 10:00:00-11:50:00",
+          "building": "Arts",
+          "exam": ""
+        },
+        {
+          "section": "05",
+          "instructor": "MARYAM ALI ZAHIR AL-HINAI",
+          "time": "MON 10:00:00-11:50:00 | SUN 14:15:00-16:05:00 | WED 10:00:00-11:50:00",
+          "building": "Arts",
+          "exam": ""
+        },
+        {
+          "section": "06",
+          "instructor": "FAISAL SAIF ALI AL SAIDI",
+          "time": "MON 08:00:00-09:50:00 | TUE 08:00:00-09:50:00 | WED 08:00:00-09:50:00",
+          "building": "Arts",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "ENGL3214",
+      "code": "ENGL3214",
+      "name": "American Survey (1)",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "MAJDA RAMADAN ATIEH",
+          "time": "MON 08:00:00-09:20:00 | WED 08:00:00-09:20:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        },
+        {
+          "section": "02",
+          "instructor": "MAJDA RAMADAN ATIEH",
+          "time": "MON 14:15:00-15:35:00 | WED 14:15:00-15:35:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        },
+        {
+          "section": "03",
+          "instructor": "SUSANNE SHUNNAQ",
+          "time": "SUN 14:15:00-15:35:00 | TUE 14:15:00-15:35:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        },
+        {
+          "section": "04",
+          "instructor": "SUSANNE SHUNNAQ",
+          "time": "MON 12:00:00-13:20:00 | WED 12:00:00-13:20:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "ENGL3218",
+      "code": "ENGL3218",
+      "name": "British Survey (1)",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "MOUNIR BEN JILANI BEN ZID",
+          "time": "SUN 08:00:00-09:20:00 | TUE 08:00:00-09:20:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        },
+        {
+          "section": "02",
+          "instructor": "MOUNIR BEN JILANI BEN ZID",
+          "time": "SUN 14:15:00-15:35:00 | TUE 14:15:00-15:35:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        },
+        {
+          "section": "03",
+          "instructor": "To Be announced",
+          "time": "SUN 10:00:00-11:20:00 | THU 10:00:00-11:20:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        },
+        {
+          "section": "04",
+          "instructor": "SUSANNE SHUNNAQ",
+          "time": "SUN 12:00:00-13:20:00 | TUE 12:00:00-13:20:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "ENGL3324",
+      "code": "ENGL3324",
+      "name": "Techniques in Translation",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "MOHAMED HABIB BEN MOHAMED KAHLAOUI",
+          "time": "SUN 12:00:00-13:20:00 | TUE 12:00:00-13:20:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        },
+        {
+          "section": "02",
+          "instructor": "To Be announced",
+          "time": "SUN 16:15:00-17:35:00 | TUE 16:15:00-17:35:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        },
+        {
+          "section": "03",
+          "instructor": "To Be announced",
+          "time": "MON 16:15:00-17:35:00 | WED 16:15:00-17:35:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "ENGL3328",
+      "code": "ENGL3328",
+      "name": "Language in Society",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "SARA BAKHIT OBAID AL SHEYADI",
+          "time": "SUN 12:00:00-13:20:00 | TUE 12:00:00-13:20:00",
+          "building": "Arts",
+          "exam": ""
+        },
+        {
+          "section": "02",
+          "instructor": "SARA BAKHIT OBAID AL SHEYADI",
+          "time": "MON 12:00:00-13:20:00 | WED 12:00:00-13:20:00",
+          "building": "Arts",
+          "exam": ""
+        },
+        {
+          "section": "03",
+          "instructor": "To Be announced",
+          "time": "SUN 12:00:00-13:20:00 | TUE 12:00:00-13:20:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        },
+        {
+          "section": "04",
+          "instructor": "To Be announced",
+          "time": "SUN 10:00:00-11:20:00 | THU 10:00:00-11:20:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "ENGL3329",
+      "code": "ENGL3329",
+      "name": "Syntax and Semantics",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "SAID HUMAID ZAHRAN AL- JAHDHAMI",
+          "time": "SUN 12:00:00-13:20:00 | TUE 12:00:00-13:20:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        },
+        {
+          "section": "02",
+          "instructor": "To Be announced",
+          "time": "MON 14:15:00-15:35:00 | WED 14:15:00-15:35:00",
+          "building": "E Common Teaching",
+          "exam": ""
+        },
+        {
+          "section": "03",
+          "instructor": "SAID HUMAID ZAHRAN AL- JAHDHAMI",
+          "time": "MON 08:00:00-09:20:00 | WED 08:00:00-09:20:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        },
+        {
+          "section": "04",
+          "instructor": "SAKINA MRANI AL AOUI",
+          "time": "SUN 08:00:00-09:20:00 | TUE 08:00:00-09:20:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        },
+        {
+          "section": "05",
+          "instructor": "ADEL SALEEM M. ABURADWAN",
+          "time": "MON 12:00:00-13:20:00 | WED 12:00:00-13:20:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "ENGL3417",
+      "code": "ENGL3417",
+      "name": "Studies in Longer Fiction",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "AYA WALID FAYYAD AKKAWI",
+          "time": "MON 12:00:00-13:20:00 | WED 12:00:00-13:20:00",
+          "building": "Arts",
+          "exam": ""
+        },
+        {
+          "section": "02",
+          "instructor": "SUSANNE SHUNNAQ",
+          "time": "MON 14:15:00-15:35:00 | WED 14:15:00-15:35:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        },
+        {
+          "section": "03",
+          "instructor": "AYA WALID FAYYAD AKKAWI",
+          "time": "SUN 14:15:00-15:35:00 | TUE 14:15:00-15:35:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "ENGL4219",
+      "code": "ENGL4219",
+      "name": "British Survey (3)",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "To Be announced",
+          "time": "MON 12:00:00-13:20:00 | WED 12:00:00-13:20:00",
+          "building": "E Common Teaching",
+          "exam": ""
+        },
+        {
+          "section": "02",
+          "instructor": "To Be announced",
+          "time": "MON 16:15:00-17:35:00 | WED 16:15:00-17:35:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        },
+        {
+          "section": "03",
+          "instructor": "Patricia Geraldine Mc Manus",
+          "time": "THU 08:00:00-09:20:00 | TUE 08:00:00-09:20:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        },
+        {
+          "section": "04",
+          "instructor": "To Be announced",
+          "time": "THU 08:00:00-09:20:00 | TUE 10:00:00-11:20:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "ENGL4220",
+      "code": "ENGL4220",
+      "name": "Readings in Modern Arabic Literature",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "AYA WALID FAYYAD AKKAWI",
+          "time": "MON 14:15:00-15:35:00 | WED 14:15:00-15:35:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        },
+        {
+          "section": "02",
+          "instructor": "AYA WALID FAYYAD AKKAWI",
+          "time": "SUN 16:15:00-17:35:00 | TUE 16:15:00-17:35:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        },
+        {
+          "section": "03",
+          "instructor": "To Be announced",
+          "time": "SUN 12:00:00-13:20:00 | TUE 12:00:00-13:20:00",
+          "building": "E Common Teaching",
+          "exam": ""
+        },
+        {
+          "section": "04",
+          "instructor": "MOUNIR BEN JILANI BEN ZID",
+          "time": "SUN 10:00:00-11:20:00 | THU 10:00:00-11:20:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "ENGL4221",
+      "code": "ENGL4221",
+      "name": "Modern Novel",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "GERARD JEREMIAH DINEEN",
+          "time": "SUN 16:15:00-17:35:00 | TUE 16:15:00-17:35:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        },
+        {
+          "section": "02",
+          "instructor": "To Be announced",
+          "time": "SUN 12:00:00-13:20:00 | TUE 12:00:00-13:20:00",
+          "building": "E Common Teaching",
+          "exam": ""
+        },
+        {
+          "section": "03",
+          "instructor": "To Be announced",
+          "time": "SUN 08:00:00-09:20:00 | TUE 08:00:00-09:20:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        },
+        {
+          "section": "04",
+          "instructor": "SANDHYA RAO MEHTA",
+          "time": "MON 12:00:00-13:20:00 | WED 12:00:00-13:20:00",
+          "building": "Arts",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "ENGL4235",
+      "code": "ENGL4235",
+      "name": "World Literature in English",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "To Be announced",
+          "time": "SUN 14:15:00-15:35:00 | TUE 14:15:00-15:35:00",
+          "building": "No Room Available",
+          "exam": ""
+        },
+        {
+          "section": "02",
+          "instructor": "SANDHYA RAO MEHTA",
+          "time": "SUN 16:15:00-17:35:00 | TUE 16:15:00-17:35:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        },
+        {
+          "section": "03",
+          "instructor": "To Be announced",
+          "time": "THU 08:00:00-09:20:00 | TUE 10:00:00-11:20:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        },
+        {
+          "section": "04",
+          "instructor": "To Be announced",
+          "time": "SUN 10:00:00-11:20:00 | THU 10:00:00-11:20:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "ENGL4325",
+      "code": "ENGL4325",
+      "name": "Applied Linguistics",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "ADEL SALEEM M. ABURADWAN",
+          "time": "MON 10:00:00-11:20:00 | WED 10:00:00-11:20:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        },
+        {
+          "section": "02",
+          "instructor": "FAISAL SAEED ALI AL- MAAMARI",
+          "time": "MON 10:00:00-11:20:00 | WED 10:00:00-11:20:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        },
+        {
+          "section": "03",
+          "instructor": "FAISAL SAEED ALI AL- MAAMARI",
+          "time": "SUN 14:15:00-15:35:00 | TUE 14:15:00-15:35:00",
+          "building": "No Room Available",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "ENGL4329",
+      "code": "ENGL4329",
+      "name": "Discourse Analysis and Pragmatics",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "SAKINA MRANI AL AOUI",
+          "time": "SUN 12:00:00-13:20:00 | TUE 12:00:00-13:20:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        },
+        {
+          "section": "02",
+          "instructor": "SAKINA MRANI AL AOUI",
+          "time": "MON 10:00:00-11:20:00 | WED 10:00:00-11:20:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        },
+        {
+          "section": "03",
+          "instructor": "To Be announced",
+          "time": "MON 14:15:00-15:35:00 | WED 14:15:00-15:35:00",
+          "building": "Arts",
+          "exam": ""
+        },
+        {
+          "section": "04",
+          "instructor": "To Be announced",
+          "time": "SUN 16:15:00-17:35:00 | TUE 16:15:00-17:35:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "ENGL4420",
+      "code": "ENGL4420",
+      "name": "Translation Studies",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "ABDULGABBAR MOHAMED AL- SHARAFI",
+          "time": "SUN 12:00:00-13:20:00 | TUE 12:00:00-13:20:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        },
+        {
+          "section": "02",
+          "instructor": "Dr. Abdulkarim M. Allabneh",
+          "time": "THU 08:00:00-09:20:00 | TUE 10:00:00-11:20:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        },
+        {
+          "section": "03",
+          "instructor": "To Be announced",
+          "time": "SUN 12:00:00-13:20:00 | TUE 12:00:00-13:20:00",
+          "building": "E Common Teaching",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "ENGL4480",
+      "code": "ENGL4480",
+      "name": "Graduation Project 1",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "To Be announced",
+          "time": "SUN 12:00:00-13:50:00 | TUE 12:00:00-13:50:00",
+          "building": "Arts",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "ENGL4560",
+      "code": "ENGL4560",
+      "name": "Period Study",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "To Be announced",
+          "time": "MON 14:15:00-15:35:00 | WED 14:15:00-15:35:00",
+          "building": "G Common Teaching",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "ENGL4563",
+      "code": "ENGL4563",
+      "name": "Major Author",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "GERARD JEREMIAH DINEEN",
+          "time": "MON 14:15:00-15:35:00 | WED 14:15:00-15:35:00",
+          "building": "G Common Teaching",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "ENGL4569",
+      "code": "ENGL4569",
+      "name": "Modern Literary Criticism",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "MAJDA RAMADAN ATIEH",
+          "time": "SUN 14:15:00-15:35:00 | TUE 14:15:00-15:35:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "ENGL4578",
+      "code": "ENGL4578",
+      "name": "Word Formation and Morphology",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "KHALSA HAMED SALIM AL- AGHBARI",
+          "time": "SUN 14:15:00-15:35:00 | TUE 14:15:00-15:35:00",
+          "building": "Arts",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "ENGL4595",
+      "code": "ENGL4595",
+      "name": "Creative Writing",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "Patricia Geraldine Mc Manus",
+          "time": "MON 14:15:00-15:35:00 | WED 14:15:00-15:35:00",
+          "building": "Arts",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "GEOG1051",
+      "code": "GEOG1051",
+      "name": "Applied Physical Geography",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "MOHAMED ELDESOKY ELSHERBINY HEREHER",
+          "time": "THU 08:00:00-09:20:00 | TUE 10:00:00-11:20:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "GEOG1055",
+      "code": "GEOG1055",
+      "name": "Geography of Developed Countries",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "KHALID AMUR SALIM AL SHAMLI",
+          "time": "MON 12:00:00-13:20:00 | WED 12:00:00-13:20:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "GEOG1057",
+      "code": "GEOG1057",
+      "name": "Geography of Tourism",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "To Be announced",
+          "time": "MON 16:15:00-17:35:00 | WED 16:15:00-17:35:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "GEOG1150",
+      "code": "GEOG1150",
+      "name": "Fundamentals of Geography",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "TALAL YOUSUF MOHAMMED AL- AWADHI",
+          "time": "MON 08:00:00-09:20:00 | WED 08:00:00-09:20:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        },
+        {
+          "section": "02",
+          "instructor": "TALAL YOUSUF MOHAMMED AL- AWADHI",
+          "time": "MON 10:00:00-11:20:00 | WED 10:00:00-11:20:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "GEOG1220",
+      "code": "GEOG1220",
+      "name": "Human Geography",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "To Be announced",
+          "time": "SUN 10:00:00-11:20:00 | THU 10:00:00-11:20:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "GEOG1250",
+      "code": "GEOG1250",
+      "name": "Geography of Climate",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "To Be announced",
+          "time": "MON 16:15:00-17:35:00 | WED 16:15:00-17:35:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "GEOG1252",
+      "code": "GEOG1252",
+      "name": "Urban Geography",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "MONTASSER IBRAHIM MAHMOUD ABDELGHANI",
+          "time": "MON 14:15:00-15:35:00 | WED 14:15:00-15:35:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "GEOG2352",
+      "code": "GEOG2352",
+      "name": "Geomorpholog y",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "YOUSSEF SHAWKY YOUSSEF SHERIEF",
+          "time": "MON 12:00:00-13:20:00 | WED 12:00:00-13:20:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "GEOG2353",
+      "code": "GEOG2353",
+      "name": "Surveying and Cartography",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "EYAD HAKAM RIDA FADDA",
+          "time": "THU 08:00:00-09:50:00 | TUE 10:00:00-11:50:00",
+          "building": "Arts",
+          "exam": ""
+        },
+        {
+          "section": "02",
+          "instructor": "WAAD KHOGALI ALI",
+          "time": "MON 14:15:00-16:05:00 | WED 14:15:00-16:05:00",
+          "building": "Arts",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "GEOG2354",
+      "code": "GEOG2354",
+      "name": "Population Geography",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "WAAD KHOGALI ALI",
+          "time": "MON 10:00:00-11:20:00 | WED 10:00:00-11:20:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "GEOG2356",
+      "code": "GEOG2356",
+      "name": "Geographical Research Methods and Field Work",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "YOUSSEF SHAWKY YOUSSEF SHERIEF",
+          "time": "SUN 08:00:00-10:50:00 | SUN 11:00:00-13:50:00",
+          "building": "Field",
+          "exam": ""
+        },
+        {
+          "section": "02",
+          "instructor": "KHALID AMUR SALIM AL SHAMLI",
+          "time": "SUN 08:00:00-10:50:00 | SUN 11:00:00-13:50:00",
+          "building": "Field",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "GEOG3550",
+      "code": "GEOG3550",
+      "name": "Physical Geography of Oman",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "ALI SAID SALIM AL-BALUSHI",
+          "time": "SUN 08:00:00-09:20:00 | TUE 08:00:00-09:20:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        },
+        {
+          "section": "02",
+          "instructor": "ALI SAID SALIM AL-BALUSHI",
+          "time": "MON 14:15:00-15:35:00 | WED 14:15:00-15:35:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "GEOG3551",
+      "code": "GEOG3551",
+      "name": "Remote Sensing",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "MOHAMED ELDESOKY ELSHERBINY HEREHER",
+          "time": "MON 08:00:00-09:20:00 | WED 08:00:00-09:20:00",
+          "building": "Arts",
+          "exam": ""
+        },
+        {
+          "section": "02",
+          "instructor": "MOHAMED ELDESOKY ELSHERBINY HEREHER",
+          "time": "MON 12:00:00-13:20:00 | WED 12:00:00-13:20:00",
+          "building": "Arts",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "GEOG3561",
+      "code": "GEOG3561",
+      "name": "Environmental Systems",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "YOUSSEF SHAWKY YOUSSEF SHERIEF",
+          "time": "MON 16:15:00-17:35:00 | WED 16:15:00-17:35:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "GEOG3562",
+      "code": "GEOG3562",
+      "name": "Climate Systems",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "To Be announced",
+          "time": "SUN 16:15:00-17:35:00 | TUE 16:15:00-17:35:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "GEOG3563",
+      "code": "GEOG3563",
+      "name": "Material Cycles and Pollution",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "MOHAMED ELDESOKY ELSHERBINY HEREHER",
+          "time": "SUN 14:15:00-15:35:00 | TUE 14:15:00-15:35:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "GEOG3571",
+      "code": "GEOG3571",
+      "name": "Regional Planning",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "MONTASSER IBRAHIM MAHMOUD ABDELGHANI",
+          "time": "MON 16:15:00-17:35:00 | WED 16:15:00-17:35:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "GEOG3572",
+      "code": "GEOG3572",
+      "name": "Statistical Analysis in Urban Planning",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "Dr. MD Ismail Tareque",
+          "time": "SUN 14:15:00-15:35:00 | TUE 14:15:00-15:35:00",
+          "building": "Arts",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "GEOG3573",
+      "code": "GEOG3573",
+      "name": "Systems and Policies of Urban Planning",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "NOURA KHALIFA MARZOUQ AL NASIRI",
+          "time": "MON 08:00:00-09:20:00 | WED 08:00:00-09:20:00",
+          "building": "Arts",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "GEOG3581",
+      "code": "GEOG3581",
+      "name": "Population Data Sources",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "To Be announced",
+          "time": "SUN 14:15:00-15:35:00 | TUE 14:15:00-15:35:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "GEOG3582",
+      "code": "GEOG3582",
+      "name": "Population Growth: (Fertility, Mortality, and Migration)",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "Dr. MD Ismail Tareque",
+          "time": "MON 10:00:00-11:20:00 | WED 10:00:00-11:20:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "GEOG3583",
+      "code": "GEOG3583",
+      "name": "Demographic Analysis (1)",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "WAAD KHOGALI ALI",
+          "time": "SUN 16:15:00-17:35:00 | TUE 16:15:00-17:35:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "GEOG3591",
+      "code": "GEOG3591",
+      "name": "Tachometric surveying and GPS",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "EYAD HAKAM RIDA FADDA",
+          "time": "MON 16:15:00-17:35:00 | WED 16:15:00-17:35:00",
+          "building": "Arts",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "GEOG3592",
+      "code": "GEOG3592",
+      "name": "Introduction to Programming",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "To Be announced",
+          "time": "SUN 14:15:00-15:35:00 | TUE 14:15:00-15:35:00",
+          "building": "Arts",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "GEOG3593",
+      "code": "GEOG3593",
+      "name": "Spatial Databases",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "TALAL YOUSUF MOHAMMED AL- AWADHI",
+          "time": "SUN 12:00:00-13:20:00 | TUE 12:00:00-13:20:00",
+          "building": "Arts",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "GEOG4750",
+      "code": "GEOG4750",
+      "name": "Man and Resources",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "EYAD HAKAM RIDA FADDA",
+          "time": "SUN 08:00:00-09:20:00 | TUE 08:00:00-09:20:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        },
+        {
+          "section": "02",
+          "instructor": "EYAD HAKAM RIDA FADDA",
+          "time": "MON 10:00:00-11:20:00 | WED 10:00:00-11:20:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "GEOG4751",
+      "code": "GEOG4751",
+      "name": "Geography of Arab World",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "To Be announced",
+          "time": "MON 08:00:00-09:20:00 | WED 08:00:00-09:20:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        },
+        {
+          "section": "02",
+          "instructor": "To Be announced",
+          "time": "MON 12:00:00-13:20:00 | WED 12:00:00-13:20:00",
+          "building": "E Common Teaching",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "GEOG4760",
+      "code": "GEOG4760",
+      "name": "Management of Natural Resources",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "To Be announced",
+          "time": "SUN 16:15:00-17:35:00 | TUE 16:15:00-17:35:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "GEOG4761",
+      "code": "GEOG4761",
+      "name": "Environmental Indicators in Oman",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "Dr. MD Ismail Tareque",
+          "time": "MON 16:15:00-17:35:00 | WED 16:15:00-17:35:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "GEOG4764",
+      "code": "GEOG4764",
+      "name": "Environment and Development Issues in Oman",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "ALI SAID SALIM AL-BALUSHI",
+          "time": "SUN 10:00:00-11:20:00 | THU 10:00:00-11:20:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "GEOG4771",
+      "code": "GEOG4771",
+      "name": "GIS and RS Applications in Planning",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "TALAL YOUSUF MOHAMMED AL- AWADHI",
+          "time": "SUN 16:15:00-17:35:00 | TUE 16:15:00-17:35:00",
+          "building": "Arts",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "GEOG4772",
+      "code": "GEOG4772",
+      "name": "Urban Renewal and Rehabilitation",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "Dr. MD Ismail Tareque",
+          "time": "SUN 12:00:00-13:20:00 | TUE 12:00:00-13:20:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "GEOG4773",
+      "code": "GEOG4773",
+      "name": "Urbanization and Development",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "MONTASSER IBRAHIM MAHMOUD ABDELGHANI",
+          "time": "SUN 12:00:00-13:20:00 | TUE 12:00:00-13:20:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "GEOG4781",
+      "code": "GEOG4781",
+      "name": "Population Policies",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "To Be announced",
+          "time": "SUN 16:15:00-17:35:00 | TUE 16:15:00-17:35:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "GEOG4782",
+      "code": "GEOG4782",
+      "name": "Population and Reproductive Health",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "WAAD KHOGALI ALI",
+          "time": "THU 08:00:00-09:20:00 | TUE 10:00:00-11:20:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "GEOG4787",
+      "code": "GEOG4787",
+      "name": "Population Problems",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "MONTASSER IBRAHIM MAHMOUD ABDELGHANI",
+          "time": "THU 08:00:00-09:20:00 | TUE 10:00:00-11:20:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "GEOG4791",
+      "code": "GEOG4791",
+      "name": "Modelling and Simulation with GIS",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "To Be announced",
+          "time": "MON 14:15:00-15:35:00 | WED 14:15:00-15:35:00",
+          "building": "Arts",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "GEOG4792",
+      "code": "GEOG4792",
+      "name": "Web GIS",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "To Be announced",
+          "time": "SUN 16:15:00-17:35:00 | TUE 16:15:00-17:35:00",
+          "building": "Arts",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "GEOG4794",
+      "code": "GEOG4794",
+      "name": "Digital Maps Analysis",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "To Be announced",
+          "time": "MON 16:15:00-17:35:00 | WED 16:15:00-17:35:00",
+          "building": "Arts",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "GEOG4852",
+      "code": "GEOG4852",
+      "name": "Political Geography",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "KHALID AMUR SALIM AL SHAMLI",
+          "time": "THU 08:00:00-09:20:00 | TUE 10:00:00-11:20:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "HIST1010",
+      "code": "HIST1010",
+      "name": "Oman and Islamic Civilization",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "BADAR HILAL KHALIFA AL- ALAWI",
+          "time": "TUE 12:00:00-13:50:00",
+          "building": "Distance Learning",
+          "exam": ""
+        },
+        {
+          "section": "02",
+          "instructor": "IBRAHIM YAHYA ZAHRAN AL- BUSAIDI",
+          "time": "TUE 10:00:00-11:50:00",
+          "building": "Distance Learning",
+          "exam": ""
+        },
+        {
+          "section": "03",
+          "instructor": "AMIRA SULAIMAN ALI AL-HARTHI",
+          "time": "SUN 10:00:00-11:50:00",
+          "building": "Distance Learning",
+          "exam": ""
+        },
+        {
+          "section": "04",
+          "instructor": "Salman Ali Khan Al Sharshani",
+          "time": "SUN 14:15:00-16:05:00",
+          "building": "Distance Learning",
+          "exam": ""
+        },
+        {
+          "section": "05",
+          "instructor": "Nabeel Majad Ibrahim Al Abri",
+          "time": "SUN 12:00:00-13:50:00",
+          "building": "Distance Learning",
+          "exam": ""
+        },
+        {
+          "section": "06",
+          "instructor": "Fatma Nasser kalaf ALHatmi",
+          "time": "TUE 10:00:00-11:50:00",
+          "building": "Distance Learning",
+          "exam": ""
+        },
+        {
+          "section": "07",
+          "instructor": "Kawthar Younis Al Yamani",
+          "time": "TUE 14:15:00-16:05:00",
+          "building": "Distance Learning",
+          "exam": ""
+        },
+        {
+          "section": "08",
+          "instructor": "To Be announced",
+          "time": "WED 16:15:00-18:05:00",
+          "building": "Distance Learning",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "HIST1013",
+      "code": "HIST1013",
+      "name": "Oman & Islamic Civilization for Non-Arabic Speakers",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "AMIRA SULAIMAN ALI AL-HARTHI",
+          "time": "SUN 16:15:00-18:05:00",
+          "building": "Distance Learning",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "HIST1025",
+      "code": "HIST1025",
+      "name": "Introduction to World History and Civilization",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "MOOSA SALIM HAMED AL- BRASHDI",
+          "time": "MON 12:00:00-13:20:00 | WED 12:00:00-13:20:00",
+          "building": "E Common Teaching",
+          "exam": ""
+        },
+        {
+          "section": "02",
+          "instructor": "MOOSA SALIM HAMED AL- BRASHDI",
+          "time": "MON 10:00:00-11:20:00 | WED 10:00:00-11:20:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "HIST1320",
+      "code": "HIST1320",
+      "name": "History of Prophet and Caliphate Era",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "FATIMA BELHAOUARI",
+          "time": "MON 08:00:00-09:20:00 | WED 08:00:00-09:20:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        },
+        {
+          "section": "02",
+          "instructor": "FATIMA BELHAOUARI",
+          "time": "SUN 14:15:00-15:35:00 | TUE 14:15:00-15:35:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "HIST2020",
+      "code": "HIST2020",
+      "name": "Modern and Contemporary History of the G.C.C. Countries",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "MOOSA SALIM HAMED AL- BRASHDI",
+          "time": "SUN 12:00:00-13:20:00 | TUE 12:00:00-13:20:00",
+          "building": "E Common Teaching",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "HIST2210",
+      "code": "HIST2210",
+      "name": "European History and Civilization in the Middle Ages",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "Dr. Yasser Moustafa Abdelwahab Moustafa",
+          "time": "SUN 12:00:00-13:20:00 | TUE 12:00:00-13:20:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        },
+        {
+          "section": "02",
+          "instructor": "Dr. Yasser Moustafa Abdelwahab Moustafa",
+          "time": "SUN 08:00:00-09:20:00 | TUE 08:00:00-09:20:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "HIST2312",
+      "code": "HIST2312",
+      "name": "History of the Islamic State in the Abbasid Period",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "BADAR HILAL KHALIFA AL- ALAWI",
+          "time": "MON 10:00:00-11:20:00 | WED 10:00:00-11:20:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "HIST2316",
+      "code": "HIST2316",
+      "name": "Islamic State Until the End of Abbasid Period",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "ALI SAID SALIM AL-RIYAMI",
+          "time": "SUN 14:15:00-15:35:00 | TUE 14:15:00-15:35:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "HIST3210",
+      "code": "HIST3210",
+      "name": "The Byzantine State",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "Dr. Yasser Moustafa Abdelwahab Moustafa",
+          "time": "MON 12:00:00-13:20:00 | WED 12:00:00-13:20:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "HIST3411",
+      "code": "HIST3411",
+      "name": "The Contemporary and Modern History of Europe",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "MOHAMMAD SALEM GHAITHIAN ALTARAWNEH",
+          "time": "SUN 14:15:00-15:35:00 | TUE 14:15:00-15:35:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "HIST3522",
+      "code": "HIST3522",
+      "name": "Historical Texts and Documents",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "AMIRA SULAIMAN ALI AL-HARTHI",
+          "time": "MON 08:00:00-09:20:00 | WED 08:00:00-09:20:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        },
+        {
+          "section": "02",
+          "instructor": "AMIRA SULAIMAN ALI AL-HARTHI",
+          "time": "MON 12:00:00-13:20:00 | WED 12:00:00-13:20:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "HIST4111",
+      "code": "HIST4111",
+      "name": "The History of Oman and the Arab Gulf Region",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "NASSER HAMED MANSOOR AL- HINAI",
+          "time": "SUN 10:00:00-11:20:00 | THU 10:00:00-11:20:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "HIST4313",
+      "code": "HIST4313",
+      "name": "The Islamic Navy",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "FATIMA BELHAOUARI",
+          "time": "SUN 16:15:00-17:35:00 | TUE 16:15:00-17:35:00",
+          "building": "Arts",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "HIST4321",
+      "code": "HIST4321",
+      "name": "History of Oman in the Islamic Period",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "BADAR HILAL KHALIFA AL- ALAWI",
+          "time": "SUN 08:00:00-09:20:00 | TUE 08:00:00-09:20:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "HIST4411",
+      "code": "HIST4411",
+      "name": "Contemporary and Modern History of Asia",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "IBRAHIM YAHYA ZAHRAN AL- BUSAIDI",
+          "time": "SUN 12:00:00-13:20:00 | TUE 12:00:00-13:20:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "HIST4450",
+      "code": "HIST4450",
+      "name": "Contemporary and Modern History of Arabia",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "To Be announced",
+          "time": "MON 12:00:00-13:20:00 | WED 12:00:00-13:20:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        },
+        {
+          "section": "02",
+          "instructor": "IBRAHIM YAHYA ZAHRAN AL- BUSAIDI",
+          "time": "MON 12:00:00-13:20:00 | WED 12:00:00-13:20:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "HIST4522",
+      "code": "HIST4522",
+      "name": "Seminar for Graduation (Project)",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "FATIMA BELHAOUARI",
+          "time": "THU 14:15:00-17:05:00",
+          "building": "Project",
+          "exam": ""
+        },
+        {
+          "section": "02",
+          "instructor": "FATIMA BELHAOUARI",
+          "time": "THU 14:15:00-17:05:00",
+          "building": "Project",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "MASS1112",
+      "code": "MASS1112",
+      "name": "Introduction to Mass Communicatio n",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "SULTAN AHMED ZAHRAN AL- AZRI",
+          "time": "MON 14:15:00-15:35:00 | WED 14:15:00-15:35:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "MASS1515",
+      "code": "MASS1515",
+      "name": "Managing New Media",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "NOORA SAID HAMED ALSIYABI",
+          "time": "MON 12:00:00-13:20:00 | WED 12:00:00-13:20:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "MASS2010",
+      "code": "MASS2010",
+      "name": "Theories of Communicatio n",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "Noureddine Ben Hassine Miladi",
+          "time": "MON 12:00:00-13:20:00 | WED 12:00:00-13:20:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        },
+        {
+          "section": "02",
+          "instructor": "HUSSNI MOHAMED MURSI NASR",
+          "time": "MON 12:00:00-13:20:00 | WED 12:00:00-13:20:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "MASS2020",
+      "code": "MASS2020",
+      "name": "Mass Media in Oman",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "NOORA SAID HAMED ALSIYABI",
+          "time": "THU 12:00:00-13:50:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "MASS2112",
+      "code": "MASS2112",
+      "name": "News in Mass Media",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "ABDELOUAHAB BOUKHENOUFA",
+          "time": "SUN 12:00:00-13:50:00 | TUE 12:00:00-13:50:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "MASS2113",
+      "code": "MASS2113",
+      "name": "News Reporting and Writing",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "Dr. Moosa Jaffar Ali Al Lawati",
+          "time": "MON 10:00:00-11:50:00 | WED 10:00:00-11:50:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        },
+        {
+          "section": "02",
+          "instructor": "Moza Abdullah Said Al Rawahi",
+          "time": "MON 10:00:00-11:50:00 | WED 10:00:00-11:50:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "MASS3010",
+      "code": "MASS3010",
+      "name": "Principle of Mass Media Research",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "EHAB HAMDI GOMAA MEGAHED",
+          "time": "THU 08:00:00-09:50:00 | TUE 10:00:00-11:50:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        },
+        {
+          "section": "02",
+          "instructor": "Mohammed Mostafa Refaat",
+          "time": "THU 08:00:00-09:50:00 | TUE 10:00:00-11:50:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "MASS3022",
+      "code": "MASS3022",
+      "name": "Media and Society",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "SULTAN AHMED ZAHRAN AL- AZRI",
+          "time": "SUN 16:15:00-17:35:00 | TUE 16:15:00-17:35:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "MASS3032",
+      "code": "MASS3032",
+      "name": "Media Translation",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "ESLAM MOHAMED ABDELRAOUF MOHAMED",
+          "time": "SUN 10:00:00-11:50:00 | THU 10:00:00-11:50:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        },
+        {
+          "section": "02",
+          "instructor": "Dr. Moosa Jaffar Ali Al Lawati",
+          "time": "SUN 10:00:00-11:50:00 | THU 10:00:00-11:50:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "MASS3101",
+      "code": "MASS3101",
+      "name": "Journalism Technology",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "Moza Abdullah Said Al Rawahi",
+          "time": "SUN 14:15:00-16:05:00 | TUE 14:15:00-16:05:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "MASS3111",
+      "code": "MASS3111",
+      "name": "Photojournalis m",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "MOHAMED ABDULLAH SAID AL ZIDI",
+          "time": "MON 16:15:00-18:05:00 | WED 16:15:00-18:05:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "MASS3112",
+      "code": "MASS3112",
+      "name": "Investigative Reporting",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "ABDELOUAHAB BOUKHENOUFA",
+          "time": "SUN 14:15:00-16:05:00 | TUE 14:15:00-16:05:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "MASS3213",
+      "code": "MASS3213",
+      "name": "Broadcasting News",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "ESLAM MOHAMED ABDELRAOUF MOHAMED",
+          "time": "SUN 14:15:00-16:05:00 | TUE 14:15:00-16:05:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "MASS3231",
+      "code": "MASS3231",
+      "name": "Writing for Radio and Television",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "EHAB HAMDI GOMAA MEGAHED",
+          "time": "MON 12:00:00-13:50:00 | WED 12:00:00-13:50:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "MASS3312",
+      "code": "MASS3312",
+      "name": "Advertising",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "MOHAMED MOKHTAR METWALLY SATOUR",
+          "time": "MON 12:00:00-13:50:00 | WED 12:00:00-13:50:00",
+          "building": "Arts",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "MASS3313",
+      "code": "MASS3313",
+      "name": "Public Relations Management",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "Mohammed Mostafa Refaat",
+          "time": "SUN 14:15:00-15:35:00 | TUE 14:15:00-15:35:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "MASS4010",
+      "code": "MASS4010",
+      "name": "Management of Mass Media Establishment s",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "MOHAMED MOKHTAR METWALLY SATOUR",
+          "time": "MON 08:00:00-09:20:00 | WED 08:00:00-09:20:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "MASS4020",
+      "code": "MASS4020",
+      "name": "Mass Media Ethics and Laws",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "FATEN BEN LAGHA EP TABEI",
+          "time": "MON 14:15:00-15:35:00 | WED 14:15:00-15:35:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "MASS4025",
+      "code": "MASS4025",
+      "name": "New Media",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "Noureddine Ben Hassine Miladi",
+          "time": "SUN 08:00:00-09:20:00 | TUE 08:00:00-09:20:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        },
+        {
+          "section": "02",
+          "instructor": "Mohammed Mostafa Refaat",
+          "time": "SUN 08:00:00-09:20:00 | TUE 08:00:00-09:20:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "MASS4031",
+      "code": "MASS4031",
+      "name": "Communicatio n and Political Issues",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "SULTAN AHMED ZAHRAN AL- AZRI",
+          "time": "MON 10:00:00-11:20:00 | WED 10:00:00-11:20:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "MASS4113",
+      "code": "MASS4113",
+      "name": "Newspaper's Design and Layout",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "MOHAMED MOKHTAR METWALLY SATOUR",
+          "time": "SUN 12:00:00-13:50:00 | TUE 12:00:00-13:50:00",
+          "building": "Arts",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "MASS4212",
+      "code": "MASS4212",
+      "name": "Radio and Television Directing",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "EHAB HAMDI GOMAA MEGAHED",
+          "time": "SUN 12:00:00-13:50:00 | TUE 12:00:00-13:50:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "MASS4313",
+      "code": "MASS4313",
+      "name": "Writing for Public Relations",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "FATEN BEN LAGHA EP TABEI",
+          "time": "SUN 12:00:00-13:50:00 | TUE 12:00:00-13:50:00",
+          "building": "Arts",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "MUSC1017",
+      "code": "MUSC1017",
+      "name": "Introduction to Solfeggio and Theory of Western Music",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "To Be announced",
+          "time": "MON 12:00:00-13:50:00 | WED 12:00:00-13:50:00",
+          "building": "Arts",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "MUSC1018",
+      "code": "MUSC1018",
+      "name": "English for Musicology (1)",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "MARIA BEDINE SULYKOS",
+          "time": "TUE 10:00:00-11:50:00",
+          "building": "Arts",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "MUSC2012",
+      "code": "MUSC2012",
+      "name": "Poetic and Musical Meter",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "SOAD MOHAMMED OTHMAN KHAN ABD ELSHAKOR",
+          "time": "WED 10:00:00-11:50:00",
+          "building": "Arts",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "MUSC2023",
+      "code": "MUSC2023",
+      "name": "Solfeggio and Theory of Western Music (1)",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "SEMAH BAYAZIDOVA SABRIEVA",
+          "time": "SUN 10:00:00-11:50:00 | TUE 10:00:00-11:50:00",
+          "building": "Arts",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "MUSC2024",
+      "code": "MUSC2024",
+      "name": "Solfeggio and Theory of Arabic Music (1)",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "To Be announced",
+          "time": "MON 10:00:00-11:50:00",
+          "building": "Arts",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "MUSC2027",
+      "code": "MUSC2027",
+      "name": "Arabic Singing (1)",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "To Be announced",
+          "time": "SUN 12:00:00-13:50:00 | TUE 12:00:00-13:50:00",
+          "building": "Arts",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "MUSC2029",
+      "code": "MUSC2029",
+      "name": "Solfeggio and Theory of Western Music (2)",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "SEMAH BAYAZIDOVA SABRIEVA",
+          "time": "MON 12:00:00-13:50:00 | WED 12:00:00-13:50:00",
+          "building": "Arts",
+          "exam": ""
+        },
+        {
+          "section": "02",
+          "instructor": "To Be announced",
+          "time": "MON 12:00:00-13:50:00 | WED 12:00:00-13:50:00",
+          "building": "Arts",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "MUSC2030",
+      "code": "MUSC2030",
+      "name": "Solfeggio and Theory of Arabic Music (2)",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "To Be announced",
+          "time": "SUN 10:00:00-11:50:00",
+          "building": "Arts",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "MUSC2035",
+      "code": "MUSC2035",
+      "name": "Musical Acoustics",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "MARIA BEDINE SULYKOS",
+          "time": "WED 14:15:00-16:05:00",
+          "building": "Arts",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "MUSC3034",
+      "code": "MUSC3034",
+      "name": "Solfeggio and Theory of Western Music (3)",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "SEMAH BAYAZIDOVA SABRIEVA",
+          "time": "MON 10:00:00-11:50:00 | WED 10:00:00-11:50:00",
+          "building": "Arts",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "MUSC3035",
+      "code": "MUSC3035",
+      "name": "Solfeggio and Theory of Arabic Music (3)",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "To Be announced",
+          "time": "TUE 10:00:00-11:50:00",
+          "building": "Arts",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "MUSC3038",
+      "code": "MUSC3038",
+      "name": "History of western Music (1)",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "MARIA BEDINE SULYKOS",
+          "time": "MON 14:15:00-16:05:00",
+          "building": "Arts",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "MUSC3039",
+      "code": "MUSC3039",
+      "name": "History of Arabic Music (1)",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "To Be announced",
+          "time": "WED 08:00:00-09:50:00",
+          "building": "Arts",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "MUSC3040",
+      "code": "MUSC3040",
+      "name": "Principals of Harmony",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "MILENA BORISOVA BOZHIKOVA",
+          "time": "THU 10:00:00-11:50:00 | TUE 14:15:00-16:05:00",
+          "building": "Arts",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "MUSC3042",
+      "code": "MUSC3042",
+      "name": "Solfeggio and Theory of Western Music (4)",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "SEMAH BAYAZIDOVA SABRIEVA",
+          "time": "SUN 12:00:00-13:50:00 | TUE 12:00:00-13:50:00",
+          "building": "Arts",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "MUSC3043",
+      "code": "MUSC3043",
+      "name": "Solfeggio and Theory of Arabic Music (4)",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "ALAA MUSTAFA MOHAMED ALI",
+          "time": "WED 10:00:00-11:50:00",
+          "building": "Arts",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "MUSC3048",
+      "code": "MUSC3048",
+      "name": "Harmony (1)",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "MILENA BORISOVA BOZHIKOVA",
+          "time": "WED 10:00:00-11:50:00",
+          "building": "Faculty Room",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "MUSC4044",
+      "code": "MUSC4044",
+      "name": "Harmony (2)",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "MILENA BORISOVA BOZHIKOVA",
+          "time": "THU 08:00:00-09:50:00",
+          "building": "Arts",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "MUSC4047",
+      "code": "MUSC4047",
+      "name": "Analysis of Western Music (1)",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "VESSELA MILENOVA MARINOVA",
+          "time": "MON 14:15:00-15:05:00 | MON 15:15:00-16:05:00",
+          "building": "Arts",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "MUSC4048",
+      "code": "MUSC4048",
+      "name": "Analysis of Arabic Music (1)",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "To Be announced",
+          "time": "MON 12:00:00-12:50:00 | MON 13:00:00-13:50:00",
+          "building": "Arts",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "MUSC4049",
+      "code": "MUSC4049",
+      "name": "Principals of Counterpoint (1)",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "MILENA BORISOVA BOZHIKOVA",
+          "time": "SUN 08:00:00-09:50:00",
+          "building": "Arts",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "MUSC4051",
+      "code": "MUSC4051",
+      "name": "Instrumentatio n and Orchestration (1)",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "LIVIE KOLMANOVA",
+          "time": "SUN 14:15:00-16:05:00",
+          "building": "Arts",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "MUSC4052",
+      "code": "MUSC4052",
+      "name": "Sight Reading and Dictation (1)",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "MILENA BORISOVA BOZHIKOVA",
+          "time": "MON 10:00:00-10:50:00 | MON 11:00:00-11:50:00",
+          "building": "Arts",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "MUSC4060",
+      "code": "MUSC4060",
+      "name": "Sight Reading and Dictation (2)",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "MILENA BORISOVA BOZHIKOVA",
+          "time": "TUE 10:00:00-11:50:00",
+          "building": "Arts",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "MUSC4061",
+      "code": "MUSC4061",
+      "name": "Harmony (3)",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "MILENA BORISOVA BOZHIKOVA",
+          "time": "WED 14:15:00-16:05:00",
+          "building": "Arts",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "MUSC4504",
+      "code": "MUSC4504",
+      "name": "Gulf Rhythm",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "To Be announced",
+          "time": "SUN 12:00:00-13:50:00 | TUE 12:00:00-13:50:00",
+          "building": "Arts",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "MUSC5008",
+      "code": "MUSC5008",
+      "name": "Harmony (4)",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "MILENA BORISOVA BOZHIKOVA",
+          "time": "MON 12:00:00-13:50:00",
+          "building": "Arts",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "MUSC5011",
+      "code": "MUSC5011",
+      "name": "Philosophy and Aesthetics of Music",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "LIVIE KOLMANOVA",
+          "time": "TUE 14:15:00-16:05:00",
+          "building": "Arts",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "MUSC5013",
+      "code": "MUSC5013",
+      "name": "Music Ensembles (1)",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "Tarek Adnan Hatem",
+          "time": "WED 12:00:00-12:50:00 | WED 13:00:00-13:50:00",
+          "building": "Arts",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "MUSC5015",
+      "code": "MUSC5015",
+      "name": "Music Ensembles (2)",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "SEMAH BAYAZIDOVA SABRIEVA",
+          "time": "THU 10:00:00-10:50:00 | THU 11:00:00-11:50:00",
+          "building": "Arts",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "PHIL1100",
+      "code": "PHIL1100",
+      "name": "Critical Thinking and Problem Solving",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "NOUREDDINE CHEBBI",
+          "time": "SUN 08:00:00-09:20:00 | TUE 08:00:00-09:20:00",
+          "building": "Arts",
+          "exam": ""
+        },
+        {
+          "section": "02",
+          "instructor": "NOUREDDINE CHEBBI",
+          "time": "SUN 12:00:00-13:20:00 | TUE 12:00:00-13:20:00",
+          "building": "Arts",
+          "exam": ""
+        },
+        {
+          "section": "03",
+          "instructor": "NOUREDDINE CHEBBI",
+          "time": "MON 08:00:00-09:20:00 | WED 08:00:00-09:20:00",
+          "building": "Arts",
+          "exam": ""
+        },
+        {
+          "section": "04",
+          "instructor": "CHERIF TAOUTAOU",
+          "time": "SUN 12:00:00-13:20:00 | TUE 12:00:00-13:20:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        },
+        {
+          "section": "05",
+          "instructor": "CHERIF TAOUTAOU",
+          "time": "SUN 16:15:00-17:35:00 | TUE 16:15:00-17:35:00",
+          "building": "Arts",
+          "exam": ""
+        },
+        {
+          "section": "06",
+          "instructor": "CHERIF TAOUTAOU",
+          "time": "MON 12:00:00-13:20:00 | WED 12:00:00-13:20:00",
+          "building": "Arts",
+          "exam": ""
+        },
+        {
+          "section": "07",
+          "instructor": "CHERIF TAOUTAOU",
+          "time": "MON 14:15:00-15:35:00 | WED 14:15:00-15:35:00",
+          "building": "Arts",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "PHIL2011",
+      "code": "PHIL2011",
+      "name": "Philosophy and Contemporary Life",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "NOUREDDINE CHEBBI",
+          "time": "MON 12:00:00-13:20:00 | WED 12:00:00-13:20:00",
+          "building": "Arts",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "SOCY1005",
+      "code": "SOCY1005",
+      "name": "Omani State & People",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "WAFA SAID MARHOON AL- MAAMARI",
+          "time": "SUN 10:00:00-11:50:00",
+          "building": "Distance Learning",
+          "exam": ""
+        },
+        {
+          "section": "02",
+          "instructor": "WAFA SAID MARHOON AL- MAAMARI",
+          "time": "TUE 10:00:00-11:50:00",
+          "building": "Distance Learning",
+          "exam": ""
+        },
+        {
+          "section": "03",
+          "instructor": "Abdul Rahman Ali Salim Said Al Wahaibi",
+          "time": "WED 14:15:00-16:05:00",
+          "building": "Distance Learning",
+          "exam": ""
+        },
+        {
+          "section": "04",
+          "instructor": "RASHID HAMED HUMAID AL- BUSAIDI",
+          "time": "MON 16:15:00-18:05:00",
+          "building": "Distance Learning",
+          "exam": ""
+        },
+        {
+          "section": "05",
+          "instructor": "To Be announced",
+          "time": "TUE 16:15:00-18:05:00",
+          "building": "Distance Learning",
+          "exam": ""
+        },
+        {
+          "section": "06",
+          "instructor": "Abdul Rahman Ali Salim Said Al Wahaibi",
+          "time": "MON 12:00:00-13:50:00",
+          "building": "Distance Learning",
+          "exam": ""
+        },
+        {
+          "section": "07",
+          "instructor": "AMJAD HASSAN AWADH AL HAJ",
+          "time": "SUN 08:00:00-09:50:00",
+          "building": "Distance Learning",
+          "exam": ""
+        },
+        {
+          "section": "08",
+          "instructor": "RAYA HAMED HILAL AL MAAMARI",
+          "time": "TUE 12:00:00-13:50:00",
+          "building": "Distance Learning",
+          "exam": ""
+        },
+        {
+          "section": "09",
+          "instructor": "To Be announced",
+          "time": "WED 16:15:00-18:05:00",
+          "building": "Distance Learning",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "SOCY1007",
+      "code": "SOCY1007",
+      "name": "Omani Contemporary Society",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "Gahad G I Hamed",
+          "time": "THU 14:15:00-16:05:00",
+          "building": "Distance Learning",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "SOCY1100",
+      "code": "SOCY1100",
+      "name": "Introduction to Sociology",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "RASHID HAMED HUMAID AL- BUSAIDI",
+          "time": "MON 12:00:00-13:20:00 | WED 12:00:00-13:20:00",
+          "building": "E Common Teaching",
+          "exam": ""
+        },
+        {
+          "section": "02",
+          "instructor": "Abdul Rahman Ali Salim Said Al Wahaibi",
+          "time": "SUN 14:15:00-15:35:00 | TUE 14:15:00-15:35:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "SOCY1210",
+      "code": "SOCY1210",
+      "name": "History of Sociological Thought",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "HOSNI IBRAHIM ABDELAZIM ABDELGHANI",
+          "time": "MON 14:15:00-15:35:00 | WED 14:15:00-15:35:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "SOCY1220",
+      "code": "SOCY1220",
+      "name": "Sociology of Population",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "SAID ABDELLI",
+          "time": "MON 12:00:00-13:20:00 | WED 12:00:00-13:20:00",
+          "building": "E Common Teaching",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "SOCY2002",
+      "code": "SOCY2002",
+      "name": "Industrial Sociology",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "RASHID HAMED HUMAID AL- BUSAIDI",
+          "time": "SUN 12:00:00-13:20:00 | TUE 12:00:00-13:20:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "SOCY2003",
+      "code": "SOCY2003",
+      "name": "Sociology of Law",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "HOSNI IBRAHIM ABDELAZIM ABDELGHANI",
+          "time": "SUN 14:15:00-15:35:00 | TUE 14:15:00-15:35:00",
+          "building": "Arts",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "SOCY2010",
+      "code": "SOCY2010",
+      "name": "Environmental Sociology",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "To Be announced",
+          "time": "MON 16:15:00-17:35:00 | WED 16:15:00-17:35:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "SOCY2110",
+      "code": "SOCY2110",
+      "name": "Sociology of the Family",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "SAID ABDELLI",
+          "time": "SUN 10:00:00-11:20:00 | THU 10:00:00-11:20:00",
+          "building": "Arts",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "SOCY2120",
+      "code": "SOCY2120",
+      "name": "Social Problems",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "HOSNI IBRAHIM ABDELAZIM ABDELGHANI",
+          "time": "SUN 12:00:00-13:20:00 | TUE 12:00:00-13:20:00",
+          "building": "E Common Teaching",
+          "exam": ""
+        },
+        {
+          "section": "02",
+          "instructor": "Gahad G I Hamed",
+          "time": "SUN 14:15:00-15:35:00 | TUE 14:15:00-15:35:00",
+          "building": "No Room Available",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "SOCY3110",
+      "code": "SOCY3110",
+      "name": "Applied Sociology",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "SAID ABDELLI",
+          "time": "MON 08:00:00-09:20:00 | WED 08:00:00-09:20:00",
+          "building": "Arts",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "SOCY3120",
+      "code": "SOCY3120",
+      "name": "Sociology of Organisation",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "Gahad G I Hamed",
+          "time": "MON 14:15:00-15:35:00 | WED 14:15:00-15:35:00",
+          "building": "No Room Available",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "SOCY3230",
+      "code": "SOCY3230",
+      "name": "Social Statistics",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "SULIMAN ZAKARIA SULIMAN ABDALLA",
+          "time": "MON 14:15:00-15:35:00 | WED 14:15:00-15:35:00",
+          "building": "Arts",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "SOCY4110",
+      "code": "SOCY4110",
+      "name": "Design and Implementatio n of Social Research (1)",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "HOSNI IBRAHIM ABDELAZIM ABDELGHANI",
+          "time": "SUN 16:15:00-17:35:00 | TUE 16:15:00-17:35:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "SOCY4120",
+      "code": "SOCY4120",
+      "name": "Field Training in Sociology",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "To Be announced",
+          "time": "SUN 08:00:00-11:20:00 | TUE 08:00:00-11:20:00",
+          "building": "Field",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "SOWK1110",
+      "code": "SOWK1110",
+      "name": "Introduction to Social Work",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "AHMED THABET HELAL IBRAHIM",
+          "time": "SUN 12:00:00-13:20:00 | TUE 12:00:00-13:20:00",
+          "building": "Arts",
+          "exam": ""
+        },
+        {
+          "section": "02",
+          "instructor": "RAYA HAMED HILAL AL MAAMARI",
+          "time": "SUN 14:15:00-15:35:00 | TUE 14:15:00-15:35:00",
+          "building": "Arts",
+          "exam": ""
+        },
+        {
+          "section": "03",
+          "instructor": "RAYA HAMED HILAL AL MAAMARI",
+          "time": "MON 10:00:00-11:20:00 | WED 10:00:00-11:20:00",
+          "building": "Arts",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "SOWK1210",
+      "code": "SOWK1210",
+      "name": "Management of Social and Educational Institutions",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "Saudi Mohammed Hassan",
+          "time": "MON 14:15:00-15:35:00 | WED 14:15:00-15:35:00",
+          "building": "No Room Available",
+          "exam": ""
+        },
+        {
+          "section": "02",
+          "instructor": "Saudi Mohammed Hassan",
+          "time": "MON 12:00:00-13:20:00 | WED 12:00:00-13:20:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "SOWK2120",
+      "code": "SOWK2120",
+      "name": "Social Work Practice with Individuals",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "MOHAMED M",
+          "time": "MON 14:15:00-15:35:00 | WED 14:15:00-15:35:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        },
+        {
+          "section": "02",
+          "instructor": "MOHAMED M",
+          "time": "MON 10:00:00-11:20:00 | WED 10:00:00-11:20:00",
+          "building": "No Room Available",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "SOWK2130",
+      "code": "SOWK2130",
+      "name": "Guidance and Social Counseling",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "MOHAMED M",
+          "time": "SUN 14:15:00-15:35:00 | TUE 14:15:00-15:35:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "SOWK2210",
+      "code": "SOWK2210",
+      "name": "Social Welfare Services in Oman",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "AMJAD HASSAN AWADH AL HAJ",
+          "time": "SUN 16:15:00-17:35:00 | TUE 16:15:00-17:35:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        },
+        {
+          "section": "02",
+          "instructor": "AMJAD HASSAN AWADH AL HAJ",
+          "time": "MON 12:00:00-13:20:00 | WED 12:00:00-13:20:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "SOWK2220",
+      "code": "SOWK2220",
+      "name": "Social Work with Groups",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "EMAD FAROUK MOHAMED SALEH",
+          "time": "MON 10:00:00-11:20:00 | WED 10:00:00-11:20:00",
+          "building": "Arts",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "SOWK2240",
+      "code": "SOWK2240",
+      "name": "Social Work Practice with Communities",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "EMAD FAROUK MOHAMED SALEH",
+          "time": "MON 14:15:00-15:35:00 | WED 14:15:00-15:35:00",
+          "building": "Arts",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "SOWK3110",
+      "code": "SOWK3110",
+      "name": "Research Methods in Social Work",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "AHMED THABET HELAL IBRAHIM",
+          "time": "MON 16:15:00-17:35:00 | WED 16:15:00-17:35:00",
+          "building": "Arts",
+          "exam": ""
+        },
+        {
+          "section": "02",
+          "instructor": "AHMED THABET HELAL IBRAHIM",
+          "time": "SUN 16:15:00-17:35:00 | TUE 16:15:00-17:35:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "SOWK3120",
+      "code": "SOWK3120",
+      "name": "Social Work in Health Services",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "EMAD FAROUK MOHAMED SALEH",
+          "time": "SUN 12:00:00-13:20:00 | TUE 12:00:00-13:20:00",
+          "building": "E Common Teaching",
+          "exam": ""
+        },
+        {
+          "section": "02",
+          "instructor": "EMAD FAROUK MOHAMED SALEH",
+          "time": "SUN 14:15:00-15:35:00 | TUE 14:15:00-15:35:00",
+          "building": "Arts",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "SOWK3130",
+      "code": "SOWK3130",
+      "name": "School Social Work",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "HAMOOD KHAMIS HAMED AL-NOFLI",
+          "time": "MON 10:00:00-11:20:00 | WED 10:00:00-11:20:00",
+          "building": "Arts",
+          "exam": ""
+        },
+        {
+          "section": "02",
+          "instructor": "HAMOOD KHAMIS HAMED AL-NOFLI",
+          "time": "SUN 14:15:00-15:35:00 | TUE 14:15:00-15:35:00",
+          "building": "Arts",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "SOWK3150",
+      "code": "SOWK3150",
+      "name": "Social Work and Local Community Development",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "MAGDY MOHAMED MOSTAFA RABOU",
+          "time": "SUN 12:00:00-13:20:00 | TUE 12:00:00-13:20:00",
+          "building": "Arts",
+          "exam": ""
+        },
+        {
+          "section": "02",
+          "instructor": "MAGDY MOHAMED MOSTAFA RABOU",
+          "time": "MON 16:15:00-17:35:00 | WED 16:15:00-17:35:00",
+          "building": "Arts",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "SOWK3210",
+      "code": "SOWK3210",
+      "name": "Fieldwork Training",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "AMAL KHALFAN RASHID AL - SALTI",
+          "time": "SUN 08:00:00-13:50:00 | TUE 08:00:00-13:50:00",
+          "building": "Field",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "SOWK3240",
+      "code": "SOWK3240",
+      "name": "Social Work and Volunteers",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "Saudi Mohammed Hassan",
+          "time": "SUN 12:00:00-13:20:00 | TUE 12:00:00-13:20:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "SOWK4110",
+      "code": "SOWK4110",
+      "name": "Statistics for Social Work",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "SULIMAN ZAKARIA SULIMAN ABDALLA",
+          "time": "SUN 14:15:00-15:05:00 | TUE 14:15:00-16:05:00",
+          "building": "Arts",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "SOWK4120",
+      "code": "SOWK4120",
+      "name": "Advanced Fieldwork Training",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "AMAL KHALFAN RASHID AL - SALTI",
+          "time": "MON 08:00:00-13:50:00 | WED 08:00:00-13:50:00",
+          "building": "Faculty Room",
+          "exam": ""
+        },
+        {
+          "section": "02",
+          "instructor": "To Be announced",
+          "time": "MON 08:00:00-13:50:00 | WED 08:00:00-13:50:00",
+          "building": "Faculty Room",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "SOWK4130",
+      "code": "SOWK4130",
+      "name": "Social Work with the Family",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "HAMOOD KHAMIS HAMED AL-NOFLI",
+          "time": "SUN 16:15:00-17:35:00 | TUE 16:15:00-17:35:00",
+          "building": "Arts",
+          "exam": ""
+        },
+        {
+          "section": "02",
+          "instructor": "HAMOOD KHAMIS HAMED AL-NOFLI",
+          "time": "MON 14:15:00-15:35:00 | WED 14:15:00-15:35:00",
+          "building": "Arts",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "SOWK4140",
+      "code": "SOWK4140",
+      "name": "Social Work and Addiction",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "MAGDY MOHAMED MOSTAFA RABOU",
+          "time": "SUN 08:00:00-09:20:00 | TUE 08:00:00-09:20:00",
+          "building": "Arts",
+          "exam": ""
+        },
+        {
+          "section": "02",
+          "instructor": "MAGDY MOHAMED MOSTAFA RABOU",
+          "time": "MON 14:15:00-15:35:00 | WED 14:15:00-15:35:00",
+          "building": "No Room Available",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "SOWK4210",
+      "code": "SOWK4210",
+      "name": "Social Policy and Social Planning",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "Saudi Mohammed Hassan",
+          "time": "SUN 08:00:00-09:20:00 | TUE 08:00:00-09:20:00",
+          "building": "Arts",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "SOWK4230",
+      "code": "SOWK4230",
+      "name": "Special Topic in Social Work",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "AHMED THABET HELAL IBRAHIM",
+          "time": "THU 14:15:00-17:05:00",
+          "building": "Arts",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "SOWK4280",
+      "code": "SOWK4280",
+      "name": "Generalist Social Work",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "MOHAMED M",
+          "time": "SUN 08:00:00-09:20:00 | TUE 08:00:00-09:20:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "SOWK4300",
+      "code": "SOWK4300",
+      "name": "Voluntary Work in Omani Society",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "AMJAD HASSAN AWADH AL HAJ",
+          "time": "SUN 12:00:00-13:20:00 | TUE 12:00:00-13:20:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "THAR2012",
+      "code": "THAR2012",
+      "name": "Play Writing",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "MOHAMED SAIF RASHID AL- HABSI",
+          "time": "MON 10:00:00-11:20:00 | WED 10:00:00-11:20:00",
+          "building": "Arts",
+          "exam": ""
+        },
+        {
+          "section": "02",
+          "instructor": "MOHAMED SAIF RASHID AL- HABSI",
+          "time": "MON 12:00:00-13:20:00 | WED 12:00:00-13:20:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        },
+        {
+          "section": "03",
+          "instructor": "MOHAMED SAIF RASHID AL- HABSI",
+          "time": "SUN 10:00:00-11:20:00 | TUE 10:00:00-11:20:00",
+          "building": "Arts",
+          "exam": ""
+        },
+        {
+          "section": "04",
+          "instructor": "MOHAMED SAIF RASHID AL- HABSI",
+          "time": "SUN 12:00:00-13:20:00 | TUE 12:00:00-13:20:00",
+          "building": "Arts",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "TOUR1001",
+      "code": "TOUR1001",
+      "name": "Introduction to Tourism",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "MASOOMA KHAMIS MAHMOOD AL- BULUSHI",
+          "time": "MON 08:00:00-09:20:00 | WED 08:00:00-09:20:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "TOUR1051",
+      "code": "TOUR1051",
+      "name": "French for Beginners (UE)",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "SAMIRA AHARRANE BERDOUZ",
+          "time": "MON 10:00:00-11:50:00",
+          "building": "B Common Teaching",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "TOUR1052",
+      "code": "TOUR1052",
+      "name": "German for Beginners (UE)",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "To Be announced",
+          "time": "TUE 10:00:00-11:50:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "TOUR1055",
+      "code": "TOUR1055",
+      "name": "Italian for Beginners (UE)",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "To Be announced",
+          "time": "SUN 08:00:00-09:50:00",
+          "building": "Arts",
+          "exam": ""
+        },
+        {
+          "section": "02",
+          "instructor": "To Be announced",
+          "time": "TUE 14:15:00-16:05:00",
+          "building": "Arts",
+          "exam": ""
+        },
+        {
+          "section": "03",
+          "instructor": "To Be announced",
+          "time": "WED 12:00:00-13:50:00",
+          "building": "Arts",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "TOUR1058",
+      "code": "TOUR1058",
+      "name": "Chinese Language for Beginners (UE)",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "ESHAQ YAQOOB SAUD AL - AZRI",
+          "time": "SUN 10:00:00-11:50:00",
+          "building": "Arts",
+          "exam": ""
+        },
+        {
+          "section": "02",
+          "instructor": "ESHAQ YAQOOB SAUD AL - AZRI",
+          "time": "MON 12:00:00-13:50:00",
+          "building": "Arts",
+          "exam": ""
+        },
+        {
+          "section": "03",
+          "instructor": "ESHAQ YAQOOB SAUD AL - AZRI",
+          "time": "TUE 10:00:00-11:50:00",
+          "building": "Arts",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "TOUR1061",
+      "code": "TOUR1061",
+      "name": "Spanish for Beginners 1 (UE)",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "Laura Sanchez Mesas",
+          "time": "SUN 10:00:00-11:50:00",
+          "building": "Arts",
+          "exam": ""
+        },
+        {
+          "section": "02",
+          "instructor": "Laura Sanchez Mesas",
+          "time": "SUN 14:15:00-16:05:00",
+          "building": "Arts",
+          "exam": ""
+        },
+        {
+          "section": "03",
+          "instructor": "Laura Sanchez Mesas",
+          "time": "MON 12:00:00-13:50:00",
+          "building": "Arts",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "TOUR1062",
+      "code": "TOUR1062",
+      "name": "Turkish for Beginners 1 (UE)",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "Muhammed Asar",
+          "time": "MON 14:15:00-16:05:00",
+          "building": "No Room Available",
+          "exam": ""
+        },
+        {
+          "section": "02",
+          "instructor": "Muhammed Asar",
+          "time": "TUE 08:00:00-09:50:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        },
+        {
+          "section": "03",
+          "instructor": "Muhammed Asar",
+          "time": "WED 10:00:00-11:50:00",
+          "building": "No Room Available",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "TOUR1111",
+      "code": "TOUR1111",
+      "name": "French for Tourism (1)",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "SAMIRA AHARRANE BERDOUZ",
+          "time": "SUN 12:00:00-13:50:00 | TUE 12:00:00-13:50:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "TOUR1113",
+      "code": "TOUR1113",
+      "name": "French for Tourism (3)",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "SAMIRA AHARRANE BERDOUZ",
+          "time": "SUN 08:00:00-09:50:00 | TUE 08:00:00-09:50:00",
+          "building": "Arts",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "TOUR1115",
+      "code": "TOUR1115",
+      "name": "French for Tourism (5)",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "SAMIRA AHARRANE BERDOUZ",
+          "time": "MON 08:00:00-09:50:00 | WED 08:00:00-09:50:00",
+          "building": "Arts",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "TOUR1211",
+      "code": "TOUR1211",
+      "name": "German for Tourism (1)",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "To Be announced",
+          "time": "SUN 12:00:00-13:50:00 | TUE 12:00:00-13:50:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "TOUR1215",
+      "code": "TOUR1215",
+      "name": "German for Tourism (5)",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "To Be announced",
+          "time": "MON 08:00:00-09:50:00 | WED 08:00:00-09:50:00",
+          "building": "Arts",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "TOUR2010",
+      "code": "TOUR2010",
+      "name": "Tourism and Hospitality Legislation",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "To Be announced",
+          "time": "TUE 16:15:00-18:05:00",
+          "building": "Arts",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "TOUR2011",
+      "code": "TOUR2011",
+      "name": "Tourist Behavior",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "MAJDA HAMOOD MOHAMED AL- SALTI",
+          "time": "MON 14:15:00-15:35:00 | WED 14:15:00-15:35:00",
+          "building": "G Common Teaching",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "TOUR3300",
+      "code": "TOUR3300",
+      "name": "Tourism Companies and Travel Agencies Operations",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "Hafidh Abdullah Rashid Al Riyami",
+          "time": "MON 14:15:00-16:05:00 | WED 14:15:00-17:05:00",
+          "building": "No Room Available",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "TOUR3340",
+      "code": "TOUR3340",
+      "name": "Event Management",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "ROKHSHAD ALIASGHAR TAVAKOLI",
+          "time": "MON 12:00:00-13:20:00 | WED 12:00:00-13:20:00",
+          "building": "E Common Teaching",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "TOUR4010",
+      "code": "TOUR4010",
+      "name": "Human Resources Management in Tourism and Hospitality",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "MASOOMA KHAMIS MAHMOOD AL- BULUSHI",
+          "time": "MON 10:00:00-11:20:00 | WED 10:00:00-11:20:00",
+          "building": "No Room Available",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "TOUR4021",
+      "code": "TOUR4021",
+      "name": "Statistics for Tourism and Hospitality",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "SULIMAN ZAKARIA SULIMAN ABDALLA",
+          "time": "SUN 12:00:00-13:20:00 | TUE 12:00:00-13:20:00",
+          "building": "Arts",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "TOUR4210",
+      "code": "TOUR4210",
+      "name": "Feasibility Study of Hospitality and Tourist Projects",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "ROKHSHAD ALIASGHAR TAVAKOLI",
+          "time": "SUN 14:15:00-15:35:00 | TUE 14:15:00-15:35:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "TOUR4440",
+      "code": "TOUR4440",
+      "name": "Risk Management for Tourism",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "Hafidh Abdullah Rashid Al Riyami",
+          "time": "MON 10:00:00-11:20:00 | WED 10:00:00-11:20:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "TOUR4470",
+      "code": "TOUR4470",
+      "name": "Resort Management",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "ROKHSHAD ALIASGHAR TAVAKOLI",
+          "time": "MON 16:15:00-17:35:00 | WED 16:15:00-17:35:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "TRAN2031",
+      "code": "TRAN2031",
+      "name": "Arabic Morphology",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "MOHAMED HABIB BEN MOHAMED KAHLAOUI",
+          "time": "MON 12:00:00-13:20:00 | WED 12:00:00-13:20:00",
+          "building": "Arts",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "TRAN2110",
+      "code": "TRAN2110",
+      "name": "Introduction to Translation: English/ Arabic & Arabic/ English",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "To Be announced",
+          "time": "MON 14:15:00-16:05:00 | WED 14:15:00-16:05:00",
+          "building": "Arts",
+          "exam": ""
+        },
+        {
+          "section": "02",
+          "instructor": "To Be announced",
+          "time": "SUN 16:15:00-18:05:00 | TUE 16:15:00-18:05:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        },
+        {
+          "section": "03",
+          "instructor": "To Be announced",
+          "time": "SUN 12:00:00-13:50:00 | TUE 12:00:00-13:50:00",
+          "building": "E Common Teaching",
+          "exam": ""
+        },
+        {
+          "section": "04",
+          "instructor": "To Be announced",
+          "time": "MON 12:00:00-13:50:00 | WED 12:00:00-13:50:00",
+          "building": "Arts",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "TRAN2120",
+      "code": "TRAN2120",
+      "name": "Arabic & English Morphology",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "To Be announced",
+          "time": "SUN 08:00:00-08:50:00 | TUE 08:00:00-09:50:00",
+          "building": "Arts",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "TRAN2121",
+      "code": "TRAN2121",
+      "name": "Introduction to Literature",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "MOUNIR BEN JILANI BEN ZID",
+          "time": "MON 10:00:00-11:20:00 | WED 10:00:00-11:20:00",
+          "building": "Arts",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "TRAN2130",
+      "code": "TRAN2130",
+      "name": "Translation Technologies",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "To Be announced",
+          "time": "SUN 12:00:00-13:50:00 | TUE 12:00:00-12:50:00",
+          "building": "Arts",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "TRAN2321",
+      "code": "TRAN2321",
+      "name": "Introduction to Translation (1 ) English- Arabic",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "To Be announced",
+          "time": "SUN 16:15:00-18:05:00 | TUE 16:15:00-18:05:00",
+          "building": "F Common Teaching",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "TRAN3031",
+      "code": "TRAN3031",
+      "name": "Arabic Text Analysis",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "MOHAMED HABIB BEN MOHAMED KAHLAOUI",
+          "time": "MON 16:15:00-17:35:00 | WED 16:15:00-17:35:00",
+          "building": "Arts",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "TRAN3421",
+      "code": "TRAN3421",
+      "name": "Media and Journalism",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "Dr. Abdulkarim M. Allabneh",
+          "time": "MON 14:15:00-16:05:00 | WED 14:15:00-16:05:00",
+          "building": "Arts",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "TRAN4421",
+      "code": "TRAN4421",
+      "name": "Translation: Legal and Documentary",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "Dr. Abdulkarim M. Allabneh",
+          "time": "MON 08:00:00-09:50:00 | WED 08:00:00-09:50:00",
+          "building": "Arts",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "TRAN4621",
+      "code": "TRAN4621",
+      "name": "Introduction to Interpreting (1) :English- Arabic",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "Ahd Mohammad Shaker Othman",
+          "time": "MON 10:00:00-11:50:00 | WED 10:00:00-11:50:00",
+          "building": "Arts",
+          "exam": ""
+        }
+      ]
+    },
+    {
+      "id": "TRAN4821",
+      "code": "TRAN4821",
+      "name": "Practicum 1 ( Internal )",
+      "sections": [
+        {
+          "section": "01",
+          "instructor": "Dr. Abdulkarim M. Allabneh",
+          "time": "MON 12:00:00-13:20:00 | WED 12:00:00-13:20:00",
+          "building": "Arts",
+          "exam": ""
+        }
+      ]
+    }
+  ]
+}

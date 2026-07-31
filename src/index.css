@@ -1,0 +1,1465 @@
+/* ============================================
+   SCHEDULE MAKER - Complete Stylesheet
+   Themes: Desert Dusk (Light) | Neon Night (Dark)
+   ============================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap');
+
+/* === Theme Variables === */
+:root {
+  /* Monochrome Light Theme */
+  --bg: #FFFFFF;
+  --bg-soft: #FAFAFA;
+  --card: #FFFFFF;
+  --card-border: #E5E5E5;
+  --text: #000000;
+  --text-dim: #525252;
+  --primary: #000000;
+  --primary-hover: #262626;
+  --primary-bg: #F5F5F5;
+  --secondary: #525252;
+  --accent: #000000;
+  --success: #16A34A;
+  --error: #DC2626;
+  --warning: #D97706;
+  --block-text: #000000;
+  
+  /* Design tokens */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.04);
+  --shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 4px 16px rgba(0, 0, 0, 0.08);
+  --radius-sm: 4px;
+  --radius: 8px;
+  --radius-lg: 12px;
+
+  --font-main: 'IBM Plex Sans', system-ui, -apple-system, sans-serif;
+  --font-display: 'IBM Plex Sans', system-ui, -apple-system, sans-serif;
+}
+
+[dir="rtl"] {
+  --font-main: 'IBM Plex Sans Arabic', system-ui, sans-serif;
+  --font-display: 'IBM Plex Sans Arabic', system-ui, sans-serif;
+}
+
+[data-theme="dark"] {
+  /* Monochrome Dark Theme - Pure Black */
+  --bg: #000000;
+  --bg-soft: #0A0A0A;
+  --card: #0A0A0A;
+  --card-border: #262626;
+  --text: #FFFFFF;
+  --text-dim: #A3A3A3;
+  --primary: #FFFFFF;
+  --primary-hover: #E5E5E5;
+  --primary-bg: #171717;
+  --secondary: #A3A3A3;
+  --accent: #FFFFFF;
+  --success: #22C55E;
+  --error: #EF4444;
+  --warning: #F59E0B;
+  --block-text: #FFFFFF;
+  
+  /* Sharper shadows for dark theme */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.2);
+  --shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  --shadow-lg: 0 4px 16px rgba(0, 0, 0, 0.4);
+}
+
+/* === Reset === */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Global Transitions */
+* {
+  transition-property: background-color, border-color, color, fill, stroke;
+  transition-duration: 0.15s;
+  transition-timing-function: ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition-duration: 0.01ms !important;
+  }
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  font-family: var(--font-main);
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body.rtl {
+  direction: rtl;
+  /* Noto Sans supports both Arabic and Latin scripts */
+}
+
+/* === Error Boundary === */
+.error-boundary {
+  padding: 2.5rem;
+  text-align: center;
+  font-family: var(--font-main);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg);
+}
+
+.error-boundary h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--error);
+  margin-bottom: 0.5rem;
+}
+
+.error-boundary p {
+  color: var(--text-dim);
+  margin-bottom: 1rem;
+}
+
+.error-boundary pre {
+  background: var(--bg-soft);
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius);
+  padding: 1rem;
+  text-align: left;
+  overflow-x: auto;
+  font-size: 0.75rem;
+  color: var(--error);
+}
+
+.error-boundary button {
+  background: var(--primary);
+  color: var(--bg);
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius);
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.error-boundary button:hover {
+  background: var(--primary-hover);
+}
+
+/* === Custom Scrollbars === */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--card-border) var(--bg-soft);
+}
+
+*::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--bg-soft);
+  border-radius: 5px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: var(--card-border);
+  border-radius: 5px;
+  border: 2px solid var(--bg-soft);
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: var(--primary);
+}
+
+/* === Button Reset & Base Styles === */
+button {
+  font-family: inherit;
+  font-size: inherit;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: inherit;
+}
+
+input {
+  font-family: inherit;
+  font-size: inherit;
+  background: none;
+  border: none;
+  outline: none;
+  color: inherit;
+}
+
+/* === Layout === */
+.app {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 1rem;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  /* Keep header layout consistent in both LTR and RTL */
+  direction: ltr;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: var(--primary);
+}
+
+.subtitle {
+  color: var(--text-dim);
+  font-size: 0.9rem;
+}
+
+.made-by {
+  font-size: 0.8rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  color: var(--text-dim);
+}
+
+.fancy-name {
+  font-weight: 700;
+  color: var(--text);
+}
+
+.data-badge {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--card);
+  border: 1px solid var(--card-border);
+  border-radius: 8px;
+  padding: 0.4rem 0.75rem;
+  font-size: 0.8rem;
+  color: var(--text-dim);
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.app-main {
+  flex: 1;
+  display: grid;
+  grid-template-columns: minmax(260px, 25%) 1fr;
+  /* Tighter sidebar */
+  gap: 1.5rem;
+  min-height: 0;
+}
+
+/* Tablet/Mobile Breakpoint: Lowered to 834px (iPad Air Portrait) */
+/* Standard iPad (768px) will attempt side-by-side if resizing allow, 
+   but usually vertical stack is safer for 768px. 
+   Let's try 830px. If width < 830, stack. */
+@media (max-width: 830px) {
+  .app-main {
+    grid-template-columns: 1fr;
+  }
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  min-height: 0;
+}
+
+/* Hidden on desktop */
+.mobile-controls,
+.sidebar-mobile-header,
+.sidebar-overlay {
+  display: none;
+}
+
+
+.main-content {
+  background: var(--card);
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+/* === Buttons === */
+
+.primary-btn {
+  background: var(--primary);
+  color: var(--bg);
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  font-weight: 600;
+  transition: all 0.2s;
+  min-width: 140px;
+  text-align: center;
+}
+
+.primary-btn:hover:not(:disabled) {
+  background: var(--primary-hover);
+}
+
+.primary-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.icon-btn {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  border: 1px solid var(--card-border);
+  background: var(--card);
+  color: var(--text-dim);
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.icon-btn:hover {
+  background: var(--bg-soft);
+  color: var(--text);
+}
+
+.lang-text-btn {
+  width: 40px;
+  height: 40px;
+}
+
+.lang-text {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.nav-btn {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  border: 1px solid var(--card-border);
+  background: var(--card);
+  color: var(--text);
+  font-weight: 600;
+  transition: all 0.2s;
+}
+
+.nav-btn:hover:not(:disabled) {
+  background: var(--primary-bg);
+}
+
+.nav-btn:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+/* === Course Selector === */
+.course-selector {
+  background: var(--card);
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-height: 0;
+}
+
+.selector-header {
+  padding: 1rem;
+  border-bottom: 1px solid var(--card-border);
+}
+
+.search-input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  background: var(--bg);
+  border: 1px solid var(--card-border);
+  border-radius: 10px;
+  font-size: 16px;
+  /* Prevents iOS zoom */
+}
+
+.search-input:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px var(--primary-bg);
+}
+
+.selector-tabs {
+  display: flex;
+  border-bottom: 1px solid var(--card-border);
+}
+
+.tab {
+  flex: 1;
+  padding: 0.75rem;
+  text-align: center;
+  font-weight: 500;
+  color: var(--text-dim);
+  border-bottom: 2px solid transparent;
+  transition: all 0.2s;
+}
+
+.tab:hover {
+  color: var(--text);
+  background: var(--bg);
+}
+
+.tab.active {
+  color: var(--primary);
+  border-bottom-color: var(--primary);
+}
+
+.selector-content {
+  flex: 1;
+  overflow-y: auto;
+  padding: 0.5rem;
+}
+
+.empty-state {
+  padding: 2rem;
+  text-align: center;
+  color: var(--text-dim);
+}
+
+.course-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.course-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius);
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.15s ease, border-color 0.15s ease;
+}
+
+.course-item:last-child {
+  margin-bottom: 0;
+}
+
+.course-item:hover {
+  background: var(--bg-soft);
+  border-color: var(--text-dim);
+}
+
+.course-item:active {
+  background: var(--card-border);
+  transform: scale(0.99);
+}
+
+.course-item.selected {
+  background: var(--primary-bg);
+  border: 1px solid var(--primary);
+}
+
+.course-info {
+  flex: 1;
+  min-width: 0;  /* Allows text truncation to work in flex container */
+}
+
+.course-code-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.course-code {
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  color: var(--text);
+}
+
+.category-pill {
+  display: inline-block;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  padding: 1px 6px;
+  border-radius: 4px;
+  line-height: 1.6;
+  flex-shrink: 0;
+}
+.cat-ur { background: #DBEAFE; color: #1D4ED8; }
+.cat-ue { background: #EDE9FE; color: #6D28D9; }
+.cat-cr { background: #DCFCE7; color: #15803D; }
+.cat-ce { background: #CCFBF1; color: #0F766E; }
+.cat-de { background: #FEF3C7; color: #B45309; }
+[data-theme="dark"] .cat-ur { background: #1E3A5F; color: #93C5FD; }
+[data-theme="dark"] .cat-ue { background: #2E1B5E; color: #C4B5FD; }
+[data-theme="dark"] .cat-cr { background: #14532D; color: #86EFAC; }
+[data-theme="dark"] .cat-ce { background: #134E4A; color: #5EEAD4; }
+[data-theme="dark"] .cat-de { background: #451A03; color: #FCD34D; }
+
+.course-name {
+  font-size: 0.875rem;
+  color: var(--text-dim);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 200px;
+}
+
+.course-action {
+  font-size: 1.1rem;
+  color: var(--text-dim);
+}
+
+.clear-all-btn {
+  width: 100%;
+  padding: 0.5rem;
+  color: var(--error);
+  font-size: 0.85rem;
+  margin-bottom: 0.5rem;
+  border-radius: 6px;
+  transition: background 0.2s;
+}
+
+.clear-all-btn:hover {
+  background: rgba(239, 68, 68, 0.1);
+}
+
+/* Selected Course Cards */
+.selected-course-card {
+  background: var(--bg);
+  border: 1px solid var(--card-border);
+  border-radius: 10px;
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.card-header {
+  padding: 0.75rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0.75rem;
+}
+
+.remove-btn {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  color: var(--text-dim);
+  transition: all 0.2s;
+}
+
+.remove-btn:hover {
+  background: rgba(239, 68, 68, 0.1);
+  color: var(--error);
+}
+
+.section-filters {
+  border-top: 1px solid var(--card-border);
+  padding-top: 0.75rem;
+}
+
+.filter-label {
+  font-size: 0.75rem;
+  color: var(--text-dim);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  direction: ltr;
+  text-align: left;
+  display: block;
+}
+
+.filter-arrow {
+  margin-left: 4px;
+}
+
+.section-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.chip {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  text-align: left;
+  transition: all 0.15s ease;
+}
+
+.chip:hover {
+  transform: translateY(-1px);
+}
+
+.chip.included {
+  background: var(--primary-bg);
+  border: 1px solid var(--primary);
+}
+
+.chip.excluded {
+  background: transparent;
+  border: 1px solid var(--card-border);
+  opacity: 0.5;
+}
+
+.chip.excluded .chip-name {
+  text-decoration: line-through;
+}
+
+.chip-name {
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+
+.chip-time {
+  font-size: 0.75rem;
+  color: var(--text-dim);
+  margin-top: 2px;
+  white-space: pre-line;
+}
+
+/* === Filter Panel === */
+.filter-panel {
+  background: var(--card);
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.filter-toggle {
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
+}
+
+.filter-toggle-text {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.filter-toggle:hover {
+  background: var(--bg);
+}
+
+.filter-content {
+  padding: 1rem;
+  border-top: 1px solid var(--card-border);
+}
+
+.filter-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.filter-hint {
+  font-size: 0.8rem;
+  color: var(--text-dim);
+}
+
+.reset-btn {
+  color: var(--primary);
+  font-size: 0.85rem;
+  text-decoration: underline;
+}
+
+.reset-btn:hover {
+  color: var(--primary-hover);
+}
+
+/* Time Grid */
+.time-grid {
+  display: grid;
+  grid-template-columns: max-content repeat(5, 1fr);
+  gap: 4px;
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  padding: 8px;
+}
+
+.grid-corner {
+  /* Empty corner */
+}
+
+.grid-header {
+  text-align: center;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--text-dim);
+  padding: 4px;
+  border-radius: 4px;
+}
+
+.grid-header.clickable {
+  cursor: pointer;
+}
+
+.grid-header.clickable:hover {
+  background: var(--bg);
+  color: var(--text);
+}
+
+.grid-time-label {
+  font-size: 0.7rem;
+  color: var(--text-dim);
+  text-align: right;
+  padding-right: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.grid-cell {
+  height: 28px;
+  background: var(--bg);
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.7rem;
+  transition: background-color 0.1s ease;
+}
+
+.grid-cell:hover:not(.blocked) {
+  background: var(--bg-soft);
+}
+
+.grid-cell.blocked {
+  background: var(--primary);
+  color: var(--bg);
+}
+
+/* === Schedule Viewer === */
+.schedule-viewer {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  flex: 1;
+  min-height: 400px;
+}
+
+.schedule-empty {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-dim);
+  text-align: center;
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.empty-icon {
+  opacity: 0.5;
+}
+
+.empty-icon svg {
+  width: 48px;
+  height: 48px;
+}
+
+.schedule-header {
+  padding: 1rem;
+  border-bottom: 1px solid var(--card-border);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.schedule-header h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.text-dim {
+  color: var(--text-dim);
+  font-weight: 400;
+}
+
+.schedule-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.schedule-counter {
+  font-size: 0.9rem;
+  font-weight: 500;
+  min-width: 60px;
+  text-align: center;
+}
+
+/* Calendar Grid */
+
+.block-code {
+  font-weight: 700;
+  font-size: 0.85rem;
+}
+
+.block-time {
+  font-size: 0.75rem;
+  opacity: 0.9;
+  direction: ltr;
+}
+
+.block-room {
+  font-size: 0.75rem;
+  opacity: 0.8;
+  direction: ltr;
+}
+
+.block-instructor {
+  font-size: 0.7rem;
+  opacity: 0.8;
+  word-wrap: break-word;
+}
+
+
+/* Footer */
+.schedule-footer {
+  border-top: 1px solid var(--card-border);
+}
+
+.footer-toggle {
+  padding: 0.75rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.footer-group {
+  display: flex;
+  align-items: center;
+}
+
+.footer-title {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.footer-toggle:hover {
+  background: var(--bg);
+}
+
+/* Exam Details Expanded */
+.exam-details-container {
+  padding: 0.75rem;
+  max-height: 400px;
+  overflow-y: auto;
+  border-top: 1px solid var(--card-border);
+}
+
+.exam-conflicts-section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.exam-divider {
+  height: 1px;
+  background: var(--card-border);
+  margin: 0.5rem 0;
+  width: 100%;
+}
+
+.exam-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.exam-item {
+  display: flex;
+  gap: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  background: var(--bg);
+  border-radius: 0;
+  /* Sharp */
+  border: 1px solid var(--card-border);
+  border-left-width: 4px;
+  border-left-color: var(--exam-color);
+  font-size: 0.85rem;
+}
+
+.exam-code {
+  font-weight: 600;
+}
+
+.exam-date {
+  color: var(--text-dim);
+}
+
+/* === Responsive === */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 900px) {
+  .app-main {
+    grid-template-columns: 1fr;
+    display: block;
+    /* Stack layout */
+    position: relative;
+  }
+
+  /* Mobile Sidebar Toggle Bar */
+  .mobile-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background: var(--card);
+    border: 1px solid var(--card-border);
+    border-radius: var(--radius);
+    margin-bottom: 1rem;
+    cursor: pointer;
+    box-shadow: var(--shadow);
+    transition: background 0.2s;
+  }
+
+  .mobile-controls:active {
+    background: var(--bg);
+  }
+
+  .mobile-controls-content {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  .mobile-label {
+    font-weight: 700;
+    color: var(--text);
+  }
+
+  .mobile-count {
+    background: var(--primary);
+    color: white;
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    font-weight: 700;
+  }
+
+  .mobile-edit-btn {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.7;
+  }
+
+  /* Sidebar Drawer */
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 85%;
+    max-width: 320px;
+    background: var(--card);
+    z-index: 1000;
+    overflow-y: auto;
+    transform: translateX(-100%);
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    border-right: 1px solid var(--card-border);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    display: flex;
+    /* Ensure it's not hidden by global display:none override if applicable */
+  }
+
+  [dir="rtl"] .sidebar {
+    right: 0;
+    left: auto;
+    transform: translateX(100%);
+    border-right: none;
+    border-left: 1px solid var(--card-border);
+  }
+
+  .sidebar.active {
+    transform: translateX(0);
+  }
+
+  /* Explicitly show sidebar header on mobile */
+  .sidebar-mobile-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid var(--card-border);
+    background: var(--bg-soft);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+
+  .sidebar-mobile-header h3 {
+    font-size: 1rem;
+    margin: 0;
+  }
+
+  .close-sidebar-btn {
+    color: var(--text-dim);
+    font-weight: 600;
+    padding: 0.5rem;
+  }
+
+  /* Overlay */
+  .sidebar-overlay {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(2px);
+    z-index: 999;
+    animation: fadeIn 0.3s ease;
+  }
+
+  .app {
+    height: auto;
+    min-height: 100vh;
+  }
+
+  .main-content {
+    min-height: 500px;
+  }
+
+  /* Force horizontal scroll for schedule on smaller screens */
+  .schedule-calendar {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .schedule-grid {
+    min-width: 100%;
+    width: max-content;
+  }
+}
+
+/* === Schedule Grid Layout === */
+.schedule-grid {
+  display: grid;
+  grid-template-columns: max-content repeat(5, 1fr);
+  border: 1px solid var(--card-border);
+  border-radius: 0 !important;
+  overflow: hidden;
+  background: var(--card);
+}
+
+.grid-header {
+  background-color: var(--bg-soft);
+  color: var(--text);
+  -webkit-tap-highlight-color: transparent;
+  /* Remove tap box */
+  padding: 0.75rem;
+  font-weight: 600;
+  text-align: center;
+  border-bottom: 1px solid var(--card-border);
+  border-right: 1px solid var(--card-border);
+  border-radius: 0 !important;
+}
+
+.grid-header:last-child {
+  border-right: none;
+}
+
+.time-header {
+  background: var(--bg-soft);
+  border-radius: 0 !important;
+}
+
+.time-cell {
+  background: var(--bg-soft);
+  padding: 0.75rem 0.5rem;
+  border-right: 1px solid var(--card-border);
+  border-bottom: 1px solid var(--card-border);
+  font-size: 0.85rem;
+  font-weight: 500;
+  text-align: center;
+  white-space: nowrap;
+  direction: ltr;
+  /* Force LTR for times */
+  border-radius: 0 !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.day-cell {
+  border-right: 1px solid var(--card-border);
+  border-bottom: 1px solid var(--card-border);
+  padding: 0;
+  min-height: 60px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  background: var(--bg);
+  border-radius: 0 !important;
+}
+
+.day-cell:last-child {
+  border-right: none;
+}
+
+.day-cell.has-class {
+  padding: 0;
+}
+
+.class-block {
+  padding: 0.5rem;
+  border-radius: 0 !important;
+  margin: 0;
+  border-left: 4px solid rgba(0, 0, 0, 0.2);
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  color: var(--block-text);
+  /* Theme-based text color */
+  height: 100%;
+  box-sizing: border-box;
+  text-align: left;
+  animation: blockFadeIn 0.4s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+@keyframes blockFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(4px) scale(0.98);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.class-block:last-child {
+  margin-bottom: 0;
+}
+
+/* Conflict Pill */
+.conflict-pill {
+  background: var(--card-border);
+  color: var(--text);
+  padding: 0.25rem 0.6rem;
+  border-radius: 12px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-inline-start: 0.5rem;
+}
+
+/* Exam Conflict Warning in dropdown */
+.exam-conflict-warning {
+  background: rgba(255, 193, 7, 0.15);
+  border-left: 4px solid var(--warning);
+  padding: 0.75rem;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  color: var(--text);
+}
+
+.conflict-header {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.conflict-courses {
+  margin-inline-start: 1.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.conflict-course-item {
+  font-size: 0.85rem;
+  opacity: 0.9;
+}
+
+@media (max-width: 640px) {
+  .app {
+    padding: 0.75rem;
+  }
+
+  .app-header {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--card-border);
+  }
+
+  .header-left {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0.75rem;
+  }
+
+  .header-right {
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+  }
+
+  /* Make buttons full width or comfortable touch targets */
+  .primary-btn {
+    flex: 1;
+    min-width: 120px;
+  }
+
+  .made-by {
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 0.75rem;
+    padding: 0.4rem 0.8rem;
+  }
+
+  .data-badge {
+    text-align: center;
+    justify-content: center;
+  }
+
+  /* Adjust Time Grid (Filter Panel) for mobile */
+  .time-grid {
+    grid-template-columns: max-content repeat(5, 1fr);
+  }
+
+  .grid-time-label {
+    font-size: 0.65rem;
+    padding-right: 4px;
+  }
+}
+
+/* Desktop Polish: Scrollable Details Footer */
+@media (min-width: 900px) {
+
+  /* Allow the main content panel to scroll independently */
+  .main-content {
+    overflow-y: auto !important;
+    overflow-x: hidden;
+    display: block;
+    /* Switch to block to behave like a document */
+  }
+
+  /* Schedule Viewer fits content height */
+  .schedule-viewer {
+    height: auto;
+    min-height: 100%;
+    overflow: visible;
+  }
+
+  /* Calendar natural height */
+  .schedule-calendar {
+    flex: 0 0 auto;
+    min-height: 200px;
+    overflow: visible;
+    /* Let vertical overflow be handled by parent */
+  }
+
+  /* Footer sits at bottom or flows normally */
+  .schedule-footer {
+    flex: none;
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+    border-top: 1px solid var(--card-border);
+    background: var(--bg);
+    margin-top: auto;
+    /* Push to bottom if schedule is short */
+  }
+
+  .footer-toggle {
+    flex: none;
+    border-bottom: 1px solid var(--card-border);
+    background: var(--card);
+  }
+
+  .exam-details-container {
+    flex: none;
+    height: auto;
+    max-height: none;
+    /* UNLIMITED HEIGHT */
+    border-top: none;
+    overflow: visible;
+    /* NO SCROLL BAR */
+    background: var(--bg-soft);
+    padding: 1rem;
+  }
+}
+
+/* Button Styles */
+.btn-secondary {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.4rem 0.8rem;
+  border-radius: var(--radius);
+  background: var(--bg);
+  border: 1px solid var(--card-border);
+  color: var(--text);
+  font-size: 0.85rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+
+.btn-secondary:hover {
+  background: var(--card-border);
+  transform: translateY(-1px);
+}
+
+.btn-secondary:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.export-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.nav-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+@media (max-width: 640px) {
+  .schedule-header {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: stretch;
+  }
+
+  .schedule-controls {
+    flex-direction: column;
+    width: 100%;
+    gap: 0.75rem;
+  }
+
+  .nav-controls {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .export-actions {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .btn-secondary {
+    flex: 1;
+    justify-content: center;
+  }
+}
+
+/* Export Overlay */
+.export-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(8px);
+  /* Blur effect */
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+.export-spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid rgba(255, 255, 255, 0.3);
+  border-top-color: white;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: 1rem;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
