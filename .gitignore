@@ -1,24 +1,16 @@
-# Logs
-logs
-*.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log*
-lerna-debug.log*
-
+# Repo root ships the built static site only (index.html, assets/, data.json, favicon.svg, vite.svg).
+# Everything below is local source/tooling, kept on disk for rebuilds but not tracked in git.
 node_modules
 dist
-dist-ssr
+src
+public
+scripts
+raw-data
+package.json
+package-lock.json
+vite.config.js
+eslint.config.js
+find-conflicts.js
+README.md
 *.local
-
-# Editor directories and files
-.vscode/*
-!.vscode/extensions.json
-.idea
-.DS_Store
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
+*.log
