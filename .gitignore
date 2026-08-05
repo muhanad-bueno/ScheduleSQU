@@ -1,16 +1,5 @@
 # Repo root ships the built static site only (index.html, assets/, data.json, favicon.svg, vite.svg).
-# Everything below is local source/tooling, kept on disk for rebuilds but not tracked in git.
-node_modules
-dist
-src
-public
-scripts
-raw-data
-package.json
-package-lock.json
-vite.config.js
-eslint.config.js
-find-conflicts.js
-README.md
+# All source lives in app/ and is kept on disk for rebuilds, but not tracked in git.
+app/
 *.local
 *.log
