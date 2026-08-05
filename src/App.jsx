@@ -13,7 +13,7 @@ import FilterPanel from './components/FilterPanel';
 import ScheduleViewer from './components/ScheduleViewer';
 import DataSourceBadge from './components/DataSourceBadge';
 
-const DATA_VERSION = 'v2.0'; // Bump to wipe old data
+const DATA_VERSION = 'v2.1'; // Bump to wipe old data
 
 // Check version and wipe if needed
 try {
@@ -212,7 +212,7 @@ function AppContent() {
         <div className="header-left">
           <h1 className="logo">Schedule Maker</h1>
           <span className="made-by">Made by <span className="fancy-name">Muhanad</span> @ SQU</span>
-          <DataSourceBadge sourceDate="2026-01-24" />
+          <DataSourceBadge sourceDate="2026-08-05" />
         </div>
         <div className="header-right">
           <LanguageToggle />
