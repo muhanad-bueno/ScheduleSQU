@@ -33,19 +33,22 @@ export default memo(function CourseSelector({
   const { lang } = useLanguage();
   const activeFilterCount = (collegeFilter !== 'All' ? 1 : 0) + (departmentFilter !== 'All' ? 1 : 0);
 
-  // Debounce + defer search for non-blocking filtering (novel: keeps input 60fps on 1290 courses)
+  // Debounce + defer search for non-blocking filtering (keeps input 60fps on 1290 courses)
   useEffect(() => {
-    const timer = setTimeout(() => setDebouncedSearch(searchTerm), 120);
+    const timer = setTimeout(() => setDebouncedSearch(searchTerm), 80);
     return () => clearTimeout(timer);
   }, [searchTerm]);
   const deferredSearch = useDeferredValue(debouncedSearch);
 
-  // Auto-switch to 'all' tab when user types
+  // Auto-switch to 'all' tab when user types + collapse filters for speed
   useEffect(() => {
     if (searchTerm.trim() && activeTab === 'selected') {
       setActiveTab('all');
     }
-  }, [searchTerm]);
+    if (searchTerm.trim() && filterOpen) {
+      setFilterOpen(false);
+    }
+  }, [searchTerm, activeTab, filterOpen]);
 
   const colleges = useMemo(() => {
     const set = new Set(courses.filter(Boolean).map(c => c.college).filter(Boolean));
