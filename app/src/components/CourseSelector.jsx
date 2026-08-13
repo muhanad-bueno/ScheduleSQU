@@ -129,27 +129,7 @@ export default memo(function CourseSelector({
     }
   }, []);
 
-  // VisualViewport-aware sheet max height — fixes bottom sheet being pushed off-screen
-  useEffect(() => {
-    const vv = window.visualViewport;
-    if (!vv) return;
-    const sidebar = document.getElementById('sidebar');
-    if (!sidebar) return;
-    const update = () => {
-      const vh = vv.height;
-      // 85% of visual viewport, capped at 680px, min 340px for usability
-      const h = Math.min(Math.max(vh * 0.85, 340), 680);
-      sidebar.style.setProperty('--sheet-h', `${h}px`);
-      sidebar.style.maxHeight = `calc(${h}px)`;
-    };
-    update();
-    vv.addEventListener('resize', update);
-    vv.addEventListener('scroll', update);
-    return () => {
-      vv.removeEventListener('resize', update);
-      vv.removeEventListener('scroll', update);
-    };
-  }, []);
+  // Side sheet is 100dvh — no visualViewport height hack needed
 
   const closePreview = useCallback(() => setPreviewCourse(null), []);
 

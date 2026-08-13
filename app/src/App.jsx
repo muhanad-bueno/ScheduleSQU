@@ -72,18 +72,19 @@ function AppContent() {
   const [showTimeModal, setShowTimeModal] = useState(false);
   const [showExamModal, setShowExamModal] = useState(false);
   const workerRef = useRef(null);
-  const sheetStartY = useRef(null);
+  const sheetStartX = useRef(null);
 
   const handleSheetTouchStart = useCallback((e) => {
-    sheetStartY.current = e.touches[0].clientY;
+    sheetStartX.current = e.touches[0].clientX;
   }, []);
   const handleSheetTouchEnd = useCallback((e) => {
-    if (sheetStartY.current == null) return;
-    const dy = e.changedTouches[0].clientY - sheetStartY.current;
-    const sidebar = document.getElementById('sidebar');
-    const atTop = !sidebar || sidebar.scrollTop <= 4;
-    if (dy > 90 && atTop) setShowSidebar(false);
-    sheetStartY.current = null;
+    if (sheetStartX.current == null) return;
+    const dx = e.changedTouches[0].clientX - sheetStartX.current;
+    const isRtl = typeof document !== 'undefined' && document.documentElement.getAttribute('dir') === 'rtl' || document.body.classList.contains('rtl');
+    // Trailing side: LTR sheet on right → swipe right (dx > 80) to close; RTL sheet on left → swipe left
+    const shouldClose = isRtl ? dx < -80 : dx > 80;
+    if (shouldClose) setShowSidebar(false);
+    sheetStartX.current = null;
   }, []);
 
   useEffect(() => {

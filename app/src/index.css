@@ -1747,29 +1747,25 @@ body.rtl .filter-select {
     opacity: 0.7;
   }
 
-  /* Sidebar — Bottom Sheet on phone (thumb-friendly) */
+  /* Sidebar — Side Sheet on phone & iPad (trailing edge, all platforms) */
   .sidebar {
     position: fixed;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    top: auto;
-    height: var(--sheet-h, min(85dvh, 680px));
-    height: var(--sheet-h, min(85vh, 680px));
-    max-height: calc(100dvh - 12px - env(safe-area-inset-top, 0px));
-    width: 100%;
+    inset: 0 0 0 auto;
+    width: min(92vw, 400px);
+    height: 100dvh;
+    max-height: none;
     max-width: none;
     background: var(--card);
     z-index: 1000;
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
     overscroll-behavior: contain;
-    transform: translateY(105%);
-    transition: transform 0.34s cubic-bezier(0.22, 1, 0.36, 1);
-    border-top: 1px solid var(--card-border);
-    border-right: none;
-    border-radius: 4px 4px 0 0;
-    box-shadow: 0 -12px 32px rgba(0, 0, 0, 0.18);
+    transform: translateX(100%);
+    transition: transform 0.32s cubic-bezier(0.22, 1, 0.36, 1);
+    border-inline-start: 1px solid var(--card-border);
+    border-top: none;
+    border-radius: 0;
+    box-shadow: -8px 0 32px rgba(0, 0, 0, 0.14);
     display: flex;
     flex-direction: column;
     padding-bottom: max(0.75rem, env(safe-area-inset-bottom));
@@ -1777,7 +1773,15 @@ body.rtl .filter-select {
   }
 
   .sidebar.active {
+    transform: translateX(0);
     will-change: transform;
+  }
+
+  /* iPad — a touch wider for 768px */
+  @media (min-width: 600px) and (max-width: 900px) {
+    .sidebar {
+      width: min(88vw, 440px);
+    }
   }
 
   /* Dim header when sheet is open — keep focus on sheet */
@@ -1787,24 +1791,19 @@ body.rtl .filter-select {
   }
 
   .sheet-handle {
-    width: 36px;
-    height: 4px;
-    border-radius: 2px;
-    background: var(--card-border);
-    margin: 0.7rem auto 0.5rem;
-    flex-shrink: 0;
+    display: none;
   }
 
   [dir="rtl"] .sidebar {
-    right: 0;
-    left: 0;
-    transform: translateY(105%);
+    inset: 0 auto 0 0;
+    transform: translateX(-100%);
     border: none;
-    border-top: 1px solid var(--card-border);
+    border-inline-end: 1px solid var(--card-border);
+    box-shadow: 8px 0 32px rgba(0, 0, 0, 0.14);
   }
 
-  .sidebar.active {
-    transform: translateY(0);
+  [dir="rtl"] .sidebar.active {
+    transform: translateX(0);
   }
 
   /* Explicitly show sidebar header on mobile */
