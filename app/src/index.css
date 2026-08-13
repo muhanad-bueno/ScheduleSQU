@@ -29,14 +29,14 @@
   --accent-strong: #2E7DA6;
   --accent-tint: #EAF7FC;
 
-  /* Design tokens — unified radius system */
-  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.04);
-  --shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
-  --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.08);
-  --radius-sm: 6px;
-  --radius: 10px;
-  --radius-lg: 14px;
-  --radius-pill: 999px;
+  /* Design tokens — squarish with subtle bezel */
+  --shadow-sm: 0 1px 0 rgba(0, 0, 0, 0.06), inset 0 1px 0 rgba(255,255,255,0.8);
+  --shadow: 0 1px 2px rgba(0, 0, 0, 0.06), inset 0 1px 0 rgba(255,255,255,0.6);
+  --shadow-lg: 0 4px 12px rgba(0, 0, 0, 0.08), inset 0 1px 0 rgba(255,255,255,0.5);
+  --radius-sm: 2px;
+  --radius: 3px;
+  --radius-lg: 4px;
+  --radius-pill: 4px;
 
   --font-main: 'IBM Plex Sans', system-ui, -apple-system, sans-serif;
   --font-display: 'IBM Plex Sans', system-ui, -apple-system, sans-serif;
@@ -70,10 +70,10 @@
   --accent-strong: #46B7E0;
   --accent-tint: #162B38;
 
-  /* Soft shadows for dark */
-  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
-  --shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
-  --shadow-lg: 0 12px 32px rgba(0, 0, 0, 0.5);
+  /* Bezel shadows for dark */
+  --shadow-sm: 0 1px 0 rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255,255,255,0.06);
+  --shadow: 0 1px 2px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255,255,255,0.05);
+  --shadow-lg: 0 4px 12px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255,255,255,0.04);
 }
 
 /* === Reset === */
@@ -85,16 +85,19 @@
   padding: 0;
 }
 
-/* Global Transitions */
-* {
+/* Theme transitions — only during toggle, not always */
+html.theme-transition * {
   transition-property: background-color, border-color, color, fill, stroke;
-  transition-duration: 0.15s;
+  transition-duration: 0.18s !important;
   transition-timing-function: ease;
 }
 
 @media (prefers-reduced-motion: reduce) {
-  * {
+  html.theme-transition * {
     transition-duration: 0.01ms !important;
+  }
+  * {
+    animation-duration: 0.01ms !important;
   }
 }
 
@@ -202,6 +205,10 @@ button {
   border: none;
   cursor: pointer;
   color: inherit;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+  -webkit-user-select: none;
 }
 
 input {
@@ -1801,7 +1808,7 @@ body.rtl .filter-select {
     transition: transform 0.34s cubic-bezier(0.22, 1, 0.36, 1);
     border-top: 1px solid var(--card-border);
     border-right: none;
-    border-radius: 16px 16px 0 0;
+    border-radius: 4px 4px 0 0;
     box-shadow: 0 -12px 32px rgba(0, 0, 0, 0.18);
     display: flex;
     flex-direction: column;
@@ -1911,11 +1918,23 @@ body.rtl .filter-select {
 
   .app {
     height: auto;
-    min-height: 100vh;
+    min-height: 100dvh;
+    padding: 0.5rem;
+    gap: 0.5rem;
+    max-width: none;
   }
 
   .main-content {
     min-height: 500px;
+    border: 1px solid var(--card-border);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+  }
+
+  .course-selector {
+    border: 1px solid var(--card-border);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
   }
 
   /* Force horizontal scroll for schedule on smaller screens */
@@ -2575,6 +2594,27 @@ body.rtl .filter-select {
   margin-bottom: 0.75rem;
 }
 
+@media (max-width: 600px) {
+  .welcome-tip {
+    background: var(--bg-soft);
+    border: 1px solid var(--card-border);
+    border-left: 3px solid var(--accent-strong);
+    border-right: none;
+    border-radius: 0;
+    padding: 0.6rem 1rem;
+    margin: 0 -1rem 0.75rem -1rem;
+    font-size: 0.74rem;
+    gap: 0.4rem;
+  }
+  .welcome-tip-icon {
+    background: var(--accent-tint) !important;
+    border: 1px solid var(--accent-soft) !important;
+    width: 26px !important;
+    height: 26px !important;
+    border-radius: var(--radius-sm) !important;
+  }
+}
+
 .welcome-tip-icon {
   width: 26px;
   height: 26px;
@@ -2949,7 +2989,7 @@ body.rtl .filter-select {
     width: 100%;
     max-width: none;
     margin: 0;
-    border-radius: 16px 16px 0 0;
+    border-radius: 4px 4px 0 0;
     box-shadow: 0 -12px 32px rgba(0, 0, 0, 0.18);
   }
   .preview-modal {
@@ -2958,7 +2998,7 @@ body.rtl .filter-select {
     width: 100%;
     max-width: none;
     margin: 0;
-    border-radius: 16px 16px 0 0;
+    border-radius: 4px 4px 0 0;
     box-shadow: 0 -12px 32px rgba(0, 0, 0, 0.18);
   }
   .preview-modal--wide {
