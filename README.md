@@ -22,19 +22,18 @@ React 19, Vite, `xlsx` for data ingestion, `jspdf` + `jspdf-autotable` for expor
 
 ## Repository layout
 
-This repo's root is the **deployed site** — GitHub Pages serves it directly from `main`, no build step in CI. Source lives in `app/` and is kept on disk locally, built and shipped manually.
-
 ```
-/                repo root — built static site (tracked, what Pages serves)
+/                repo root — built static site for GitHub Pages (tracked)
   index.html
   assets/
   data.json
   favicon.svg
-app/             source (gitignored, local only)
+app/             source (tracked, Netlify builds from here)
   src/
   public/
   raw-data/      source Excel files for course data
   scripts/       convert-data.js — Excel -> data.json
+netlify.toml     Netlify config (base = app, publish = dist)
 ```
 
 ## Local development
@@ -54,18 +53,30 @@ npm run dev
 
 ## Deploying
 
-No CI build — you build locally and commit the output.
+**GitHub Pages** (https://muhanad-bueno.github.io/ScheduleSQU/) serves the pre-built root (`index.html` + `assets/`). **Netlify** (https://schedulesqu.netlify.app) builds from `app/` on every push.
+
+Vite base is env-aware: `netlify.toml` + `app/vite.config.js:6` → `base: NETLIFY ? '/' : '/ScheduleSQU/'`.
 
 ```bash
+# local dev
+cd app && npm run dev
+
+# ship to GitHub Pages (builds with base /ScheduleSQU/)
 cd app
-npm run deploy      # vite build + copy dist/ into repo root
+npm run build        # or npm run deploy (build + ship)
+node ship.js         # copies dist/ -> repo root
 cd ..
 git add -A
 git commit -m "Deploy: <what changed>"
-git push
+git push             # triggers both Pages + Netlify auto-build
+
+# manual Netlify deploy (uses same build, but needs NETLIFY=true)
+$env:NETLIFY="true"          # PowerShell; or NETLIFY=true on macOS/Linux
+npm --prefix app run build
+netlify deploy --dir app/dist --prod   # or netlify deploy --build --prod
 ```
 
-GitHub Pages is set to serve from branch `main`, root folder — once pushed, it's live.
+Netlify auto-deploys on `git push` to `main` — no manual step needed after the first `netlify link`.
 
 ## Contact
 

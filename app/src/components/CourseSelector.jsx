@@ -164,6 +164,7 @@ export default memo(function CourseSelector({
             value={searchTerm}
             onChange={e => setSearchTerm(e.target.value)}
             onFocus={handleInputFocus}
+            dir="auto"
             autoCorrect="off"
             spellCheck={false}
             enterKeyHint="search"
