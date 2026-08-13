@@ -1,5 +1,4 @@
-# Repo root ships the built static site only (index.html, assets/, data.json, favicon.svg, vite.svg).
-# All source lives in app/ and is kept on disk for rebuilds, but not tracked in git.
-app/
+app/node_modules/
+app/dist/
 *.local
 *.log

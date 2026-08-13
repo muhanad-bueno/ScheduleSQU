@@ -1,0 +1,94 @@
+/* Hero / intro screen shown while course data loads */
+.hero-screen {
+    position: fixed;
+    inset: 0;
+    background: var(--bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+.hero-content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.1rem;
+}
+
+.hero-mark {
+    overflow: visible;
+}
+
+.hero-cell {
+    fill: var(--card);
+    stroke: var(--card-border);
+    stroke-width: 1.5;
+    opacity: 0;
+    transform: scale(0.6);
+    transform-origin: center;
+    animation: hero-cell-in 0.45s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+}
+
+.hero-cell-0 { animation-delay: 0.05s; }
+.hero-cell-1 { animation-delay: 0.18s; }
+.hero-cell-2 { animation-delay: 0.18s; }
+
+.hero-cell-active {
+    fill: var(--accent-soft);
+    stroke: var(--accent-strong);
+    animation:
+        hero-cell-in 0.45s cubic-bezier(0.2, 0.8, 0.2, 1) 0.32s forwards,
+        hero-pulse 1.6s ease-in-out 0.9s infinite;
+}
+
+.hero-wordmark {
+    font-family: var(--font-display);
+    font-size: 1.6rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: var(--text);
+    opacity: 0;
+    transform: translateY(6px);
+    animation: hero-text-in 0.4s ease-out 0.55s forwards;
+}
+
+.hero-text {
+    color: var(--text-dim);
+    font-size: 0.9rem;
+    font-family: var(--font-main);
+    margin: 0;
+    opacity: 0;
+    animation: hero-text-in 0.4s ease-out 0.7s forwards;
+}
+
+@keyframes hero-cell-in {
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes hero-text-in {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes hero-pulse {
+    0%, 100% { filter: drop-shadow(0 0 0 transparent); }
+    50% { filter: drop-shadow(0 0 6px var(--accent-soft)); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .hero-cell,
+    .hero-cell-active,
+    .hero-wordmark,
+    .hero-text {
+        animation: none;
+        opacity: 1;
+        transform: none;
+    }
+}
