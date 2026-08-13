@@ -22,7 +22,6 @@ export default memo(function CourseSelector({
   sectionFilters,
   onToggleSection,
   onClearAll,
-  blockedSlots,
   t
 }) {
   const [searchTerm, setSearchTerm] = useState('');
