@@ -1,5 +1,5 @@
 import { useState, useMemo, useEffect, useRef, memo, useCallback, useDeferredValue } from 'react';
-import { Check, Plus, X, Eye } from 'lucide-react';
+import { Check, Plus, X, Eye, SlidersHorizontal } from 'lucide-react';
 import { getSectionScheduleSummary } from '../utils/timeUtils';
 import { useLanguage } from './LanguageContext';
 import CoursePreviewModal from './CoursePreviewModal';
@@ -30,7 +30,9 @@ export default memo(function CourseSelector({
   const [activeTab, setActiveTab] = useState('all');
   const [collegeFilter, setCollegeFilter] = useState('All');
   const [departmentFilter, setDepartmentFilter] = useState('All');
+  const [filterOpen, setFilterOpen] = useState(false);
   const { lang } = useLanguage();
+  const activeFilterCount = (collegeFilter !== 'All' ? 1 : 0) + (departmentFilter !== 'All' ? 1 : 0);
 
   // Debounce + defer search for non-blocking filtering (novel: keeps input 60fps on 1290 courses)
   useEffect(() => {
@@ -156,24 +158,36 @@ export default memo(function CourseSelector({
     <div className="course-selector">
       <div className="selector-header">
         <div className="search-wrap">
-          <input
-            ref={inputRef}
-            type="text"
-            className="search-input"
-            placeholder={t.searchPlaceholder}
-            value={searchTerm}
-            onChange={e => setSearchTerm(e.target.value)}
-            onFocus={handleInputFocus}
-            dir="auto"
-            autoCorrect="off"
-            spellCheck={false}
-            enterKeyHint="search"
-          />
-          {searchTerm && (
-            <button className="search-clear" onClick={() => setSearchTerm('')} aria-label="Clear search">
-              <X size={14} />
-            </button>
-          )}
+          <div className="search-input-wrap">
+            <input
+              ref={inputRef}
+              type="text"
+              className="search-input"
+              placeholder={t.searchPlaceholder}
+              value={searchTerm}
+              onChange={e => setSearchTerm(e.target.value)}
+              onFocus={handleInputFocus}
+              dir="auto"
+              autoCorrect="off"
+              spellCheck={false}
+              enterKeyHint="search"
+            />
+            {searchTerm && (
+              <button className="search-clear" onClick={() => setSearchTerm('')} aria-label="Clear search">
+                <X size={14} />
+              </button>
+            )}
+          </div>
+          <button
+            className={`filter-chip ${filterOpen ? 'active' : ''} ${activeFilterCount > 0 ? 'has-filters' : ''}`}
+            onClick={() => setFilterOpen(v => !v)}
+            aria-expanded={filterOpen}
+            aria-label="Toggle filters"
+          >
+            <SlidersHorizontal size={14} />
+            <span className="filter-chip-label">{lang === 'ar' ? 'فلترة' : 'Filters'}</span>
+            {activeFilterCount > 0 && <span className="filter-chip-badge">{activeFilterCount}</span>}
+          </button>
         </div>
       </div>
 
@@ -182,50 +196,56 @@ export default memo(function CourseSelector({
           className={`tab ${activeTab === 'all' ? 'active' : ''}`}
           onClick={() => setActiveTab('all')}
         >
-          {t.tabs.all}
+          <span>{t.tabs.all}</span>
+          <span className="tab-count">{Math.min(filteredCourses.length, 50)}</span>
         </button>
         <button
           className={`tab ${activeTab === 'selected' ? 'active' : ''}`}
           onClick={() => setActiveTab('selected')}
         >
-          {t.tabs.selected} ({selectedCourses.length})
+          <span>{t.tabs.selected}</span>
+          <span className={`tab-badge ${selectedCourses.length > 0 ? 'has' : ''}`}>{selectedCourses.length}</span>
         </button>
       </div>
 
       {activeTab === 'all' && (
-        <div className="filter-bar">
-          <select
-            className="filter-select"
-            value={collegeFilter}
-            onChange={(e) => setCollegeFilter(e.target.value)}
-            aria-label="Filter by college"
-          >
-            <option value="All">{t.filterAllColleges}</option>
-            {colleges.filter(c => c !== 'All').map(col => (
-              <option key={col} value={col}>{displayCollege(col)}</option>
-            ))}
-          </select>
-          {collegeFilter !== 'All' && departments.length > 1 && (
+        <div className={`filter-collapsible ${filterOpen ? 'open' : ''}`}>
+          <div className="filter-bar">
             <select
               className="filter-select"
-              value={departmentFilter}
-              onChange={(e) => setDepartmentFilter(e.target.value)}
-              aria-label="Filter by department"
+              value={collegeFilter}
+              onChange={(e) => setCollegeFilter(e.target.value)}
+              aria-label="Filter by college"
             >
-              <option value="All">{lang === 'ar' ? 'كل الأقسام' : 'All Departments'}</option>
-              {departments.filter(d => d !== 'All').map(dept => (
-                <option key={dept} value={dept}>{displayDepartment(dept)}</option>
+              <option value="All">{t.filterAllColleges}</option>
+              {colleges.filter(c => c !== 'All').map(col => (
+                <option key={col} value={col}>{displayCollege(col)}</option>
               ))}
             </select>
-          )}
-          <span className="filter-count">
-            {t.showing} {Math.min(filteredCourses.length, 50)} / {courses.length}
-          </span>
-          {(collegeFilter !== 'All' || departmentFilter !== 'All') && (
-            <button className="filter-clear" onClick={() => { setCollegeFilter('All'); setDepartmentFilter('All'); }}>
-              {t.clearFilters}
-            </button>
-          )}
+            {collegeFilter !== 'All' && departments.length > 1 && (
+              <select
+                className="filter-select"
+                value={departmentFilter}
+                onChange={(e) => setDepartmentFilter(e.target.value)}
+                aria-label="Filter by department"
+              >
+                <option value="All">{lang === 'ar' ? 'كل الأقسام' : 'All Departments'}</option>
+                {departments.filter(d => d !== 'All').map(dept => (
+                  <option key={dept} value={dept}>{displayDepartment(dept)}</option>
+                ))}
+              </select>
+            )}
+            <div className="filter-bar-foot">
+              <span className="filter-count" dir="ltr">
+                {Math.min(filteredCourses.length, 50)} / {courses.length}
+              </span>
+              {(collegeFilter !== 'All' || departmentFilter !== 'All') && (
+                <button className="filter-clear" onClick={() => { setCollegeFilter('All'); setDepartmentFilter('All'); }}>
+                  {t.clearFilters}
+                </button>
+              )}
+            </div>
+          </div>
         </div>
       )}
 
