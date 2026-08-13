@@ -7,35 +7,36 @@
 
 /* === Theme Variables === */
 :root {
-  /* Light Theme — Carbon-flat, baby powder blue cast */
-  --bg: #FFFFFF;
+  /* Light Theme — airy, baby powder blue */
+  --bg: #F8FBFE;
   --bg-soft: #EFF8FC;
   --card: #FFFFFF;
   --card-border: #CBE6F0;
-  --text: #000000;
-  --text-dim: #4A5560;
-  --primary: #000000;
-  --primary-hover: #262626;
+  --text: #0F172A;
+  --text-dim: #64748B;
+  --primary: #0F172A;
+  --primary-hover: #1E293B;
   --primary-bg: #E1F1F8;
-  --secondary: #525252;
-  --accent: #000000;
+  --secondary: #475569;
+  --accent: #0F172A;
   --success: #16A34A;
   --error: #DC2626;
   --warning: #D97706;
-  --block-text: #000000;
+  --block-text: #0F172A;
 
-  /* Accent: baby powder blue */
+  /* Accent: powder blue */
   --accent-soft: #B8E2F2;
   --accent-strong: #2E7DA6;
   --accent-tint: #EAF7FC;
 
-  /* Design tokens — sharp, Carbon-style: flat surfaces, near-0 radius */
+  /* Design tokens — unified radius system */
   --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.04);
   --shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
-  --shadow-lg: 0 2px 6px rgba(0, 0, 0, 0.08);
-  --radius-sm: 2px;
-  --radius: 2px;
-  --radius-lg: 2px;
+  --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.08);
+  --radius-sm: 6px;
+  --radius: 10px;
+  --radius-lg: 14px;
+  --radius-pill: 999px;
 
   --font-main: 'IBM Plex Sans', system-ui, -apple-system, sans-serif;
   --font-display: 'IBM Plex Sans', system-ui, -apple-system, sans-serif;
@@ -47,32 +48,32 @@
 }
 
 [data-theme="dark"] {
-  /* Dark Theme - Pure Black, soft pink cast */
-  --bg: #000000;
-  --bg-soft: #140D11;
-  --card: #0A0A0A;
-  --card-border: #3A2530;
-  --text: #FFFFFF;
-  --text-dim: #A3A3A3;
-  --primary: #FFFFFF;
-  --primary-hover: #E5E5E5;
-  --primary-bg: #171717;
-  --secondary: #A3A3A3;
-  --accent: #FFFFFF;
+  /* Dark Theme — slate blue, calm, not pure black */
+  --bg: #0F141A;
+  --bg-soft: #16202B;
+  --card: #1B2530;
+  --card-border: #2A3442;
+  --text: #E6EDF5;
+  --text-dim: #90A0B2;
+  --primary: #E6EDF5;
+  --primary-hover: #D2DDE8;
+  --primary-bg: #1E2E3D;
+  --secondary: #8A9AB0;
+  --accent: #7DD3F0;
   --success: #22C55E;
   --error: #EF4444;
   --warning: #F59E0B;
-  --block-text: #FFFFFF;
+  --block-text: #0F172A;
 
-  /* Accent: soft pink glow */
-  --accent-soft: #F6B4CE;
-  --accent-strong: #F282AD;
-  --accent-tint: #2A1620;
+  /* Accent: muted blue, matches light */
+  --accent-soft: #24404F;
+  --accent-strong: #46B7E0;
+  --accent-tint: #162B38;
 
-  /* Flat, sharp shadows for dark theme */
-  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.2);
-  --shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
-  --shadow-lg: 0 2px 6px rgba(0, 0, 0, 0.4);
+  /* Soft shadows for dark */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
+  --shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 12px 32px rgba(0, 0, 0, 0.5);
 }
 
 /* === Reset === */
@@ -351,7 +352,7 @@ a:focus-visible,
 .sidebar,
 .main-content {
   width: 100%;
-  min-height: 520px;
+  min-height: 360px;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -594,6 +595,19 @@ body.rtl .search-clear {
 
 .filter-chip-label {
   font-size: 0.78rem;
+}
+
+@media (min-width: 901px) {
+  .filter-chip-label {
+    display: none;
+  }
+  .filter-chip {
+    padding: 0.5rem;
+    width: 36px;
+    height: 36px;
+    justify-content: center;
+    border-radius: var(--radius-pill);
+  }
 }
 
 .selector-tabs {
@@ -903,8 +917,8 @@ body.rtl .filter-select {
 }
 
 .meta-college {
-  font-weight: 600;
-  color: var(--accent-strong);
+  font-weight: 500;
+  color: var(--text-dim);
 }
 
 .course-action {
@@ -1475,7 +1489,7 @@ body.rtl .filter-select {
   flex-direction: column;
   height: 100%;
   flex: 1;
-  min-height: 400px;
+  min-height: 280px;
 }
 
 .schedule-empty {
