@@ -23,10 +23,15 @@ export function ThemeProvider({ children }) {
     }, [theme]);
 
     const toggleTheme = () => {
-        const root = document.documentElement;
-        root.classList.add('theme-transition');
-        setTheme(prev => prev === 'light' ? 'dark' : 'light');
-        window.setTimeout(() => root.classList.remove('theme-transition'), 280);
+        const update = () => setTheme(prev => prev === 'light' ? 'dark' : 'light');
+        if (typeof document !== 'undefined' && document.startViewTransition) {
+            document.startViewTransition(update);
+        } else {
+            const root = document.documentElement;
+            root.classList.add('theme-transition');
+            update();
+            window.setTimeout(() => root.classList.remove('theme-transition'), 140);
+        }
     };
 
     return (

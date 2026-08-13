@@ -92,7 +92,6 @@ export default function WelcomeModal({ open, onClose, allCourses = [] }) {
                     <div className="welcome-export-body">
                         <div className="welcome-export-title">{t.welcomeExportTitle}</div>
                         <div className="welcome-export-desc">{t.welcomeExportDesc}</div>
-                        <div className="welcome-export-hint">{t.welcomeExportHint}</div>
                     </div>
                     <button
                         className="welcome-export-btn"

@@ -87,8 +87,8 @@
 
 /* Theme transitions — only during toggle, not always */
 html.theme-transition * {
-  transition-property: background-color, border-color, color, fill, stroke;
-  transition-duration: 0.18s !important;
+  transition-property: background-color, border-color, color;
+  transition-duration: 0.12s !important;
   transition-timing-function: ease;
 }
 

@@ -115,9 +115,9 @@ function AppContent() {
     return () => { mounted = false; };
   }, []);
 
-  // Keep the intro on screen for at least one full beat, even if data loads instantly
+  // Keep intro just long enough to avoid flash, then show
   useEffect(() => {
-    const timer = setTimeout(() => setHeroMinTimeDone(true), 900);
+    const timer = setTimeout(() => setHeroMinTimeDone(true), 380);
     return () => clearTimeout(timer);
   }, []);
 
