@@ -1,5 +1,5 @@
 import { useState, useMemo, useEffect, useRef, memo, useCallback, useDeferredValue } from 'react';
-import { Check, Plus, X, Eye, SlidersHorizontal } from 'lucide-react';
+import { Check, Plus, X, Eye } from 'lucide-react';
 import { getSectionScheduleSummary } from '../utils/timeUtils';
 import { useLanguage } from './LanguageContext';
 import CoursePreviewModal from './CoursePreviewModal';
@@ -183,9 +183,7 @@ export default memo(function CourseSelector({
             aria-expanded={filterOpen}
             aria-label="Toggle filters"
           >
-            <SlidersHorizontal size={14} />
-            <span className="filter-chip-label">{lang === 'ar' ? 'فلترة' : 'Filters'}</span>
-            {activeFilterCount > 0 && <span className="filter-chip-badge">{activeFilterCount}</span>}
+            {lang === 'ar' ? 'فرز' : 'Filter'}
           </button>
         </div>
       </div>

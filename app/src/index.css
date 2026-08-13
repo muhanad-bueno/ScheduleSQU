@@ -550,13 +550,13 @@ body.rtl .search-clear {
 .filter-chip {
   display: inline-flex;
   align-items: center;
-  gap: 0.35rem;
-  padding: 0.55rem 0.7rem;
+  justify-content: center;
+  padding: 0.5rem 0.9rem;
   border-radius: 2px;
-  border: 1px dashed var(--card-border);
-  background: transparent;
+  border: 1px solid var(--card-border);
+  background: var(--card);
   color: var(--text-dim);
-  font-size: 0.76rem;
+  font-size: 0.78rem;
   font-weight: 600;
   white-space: nowrap;
   flex-shrink: 0;
@@ -564,24 +564,21 @@ body.rtl .search-clear {
 }
 
 .filter-chip:hover {
-  border-style: solid;
-  border-color: var(--card-border);
   background: var(--bg-soft);
+  border-color: var(--card-border);
   color: var(--text);
 }
 
 .filter-chip.active {
   background: var(--accent-tint);
   border-color: var(--accent-soft);
-  border-style: solid;
   color: var(--accent-strong);
 }
 
 .filter-chip.has-filters {
-  background: var(--accent-strong);
-  border-color: var(--accent-strong);
-  border-style: solid;
-  color: var(--bg);
+  background: var(--accent-tint);
+  border-color: var(--accent-soft);
+  color: var(--accent-strong);
 }
 
 .filter-chip-badge {
