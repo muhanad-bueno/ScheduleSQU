@@ -7,27 +7,27 @@
 
 /* === Theme Variables === */
 :root {
-  /* Light Theme — airy, baby powder blue */
-  --bg: #F8FBFE;
-  --bg-soft: #EFF8FC;
+  /* Light — charcoal + professional blue */
+  --bg: #F8F9FB;
+  --bg-soft: #EFF3F8;
   --card: #FFFFFF;
-  --card-border: #CBE6F0;
+  --card-border: #DDE5ED;
   --text: #0F172A;
   --text-dim: #64748B;
   --primary: #0F172A;
   --primary-hover: #1E293B;
-  --primary-bg: #E1F1F8;
+  --primary-bg: #EFF3F8;
   --secondary: #475569;
-  --accent: #0F172A;
+  --accent: #1E3A8A;
   --success: #16A34A;
   --error: #DC2626;
   --warning: #D97706;
   --block-text: #0F172A;
 
-  /* Accent: powder blue */
-  --accent-soft: #B8E2F2;
-  --accent-strong: #2E7DA6;
-  --accent-tint: #EAF7FC;
+  /* Accent: inventive professional blue */
+  --accent-soft: #DBEAFE;
+  --accent-strong: #1D4ED8;
+  --accent-tint: #EFF6FF;
 
   /* Design tokens — squarish with subtle bezel */
   --shadow-sm: 0 1px 0 rgba(0, 0, 0, 0.06), inset 0 1px 0 rgba(255,255,255,0.8);
@@ -48,32 +48,32 @@
 }
 
 [data-theme="dark"] {
-  /* Dark Theme — slate blue, calm, not pure black */
-  --bg: #0F141A;
-  --bg-soft: #16202B;
-  --card: #1B2530;
-  --card-border: #2A3442;
-  --text: #E6EDF5;
-  --text-dim: #90A0B2;
-  --primary: #E6EDF5;
-  --primary-hover: #D2DDE8;
-  --primary-bg: #1E2E3D;
-  --secondary: #8A9AB0;
-  --accent: #7DD3F0;
+  /* Dark — charcoal + electric blue, inventive */
+  --bg: #0B0E14;
+  --bg-soft: #141A22;
+  --card: #1A1F28;
+  --card-border: #232D3B;
+  --text: #E2E8F0;
+  --text-dim: #8A98AD;
+  --primary: #E2E8F0;
+  --primary-hover: #EDF2F7;
+  --primary-bg: #1E2A3A;
+  --secondary: #8A98AD;
+  --accent: #60A5FA;
   --success: #22C55E;
-  --error: #EF4444;
+  --error: #F43F5E;
   --warning: #F59E0B;
   --block-text: #0F172A;
 
-  /* Accent: muted blue, matches light */
-  --accent-soft: #24404F;
-  --accent-strong: #46B7E0;
-  --accent-tint: #162B38;
+  /* Accent: professional blue on charcoal */
+  --accent-soft: #1E2F4A;
+  --accent-strong: #3B82F6;
+  --accent-tint: #132036;
 
   /* Bezel shadows for dark */
-  --shadow-sm: 0 1px 0 rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255,255,255,0.06);
-  --shadow: 0 1px 2px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255,255,255,0.05);
-  --shadow-lg: 0 4px 12px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255,255,255,0.04);
+  --shadow-sm: 0 1px 0 rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255,255,255,0.04);
+  --shadow: 0 1px 2px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255,255,255,0.03);
+  --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.6), inset 0 1px 0 rgba(255,255,255,0.03);
 }
 
 /* === Reset === */
