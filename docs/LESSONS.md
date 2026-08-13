@@ -50,5 +50,15 @@ This project rebuilt the SQU schedule builder from a single-college Arts prototy
 - Don’t try to make PDFs bilingual with embedded fonts until you have a proper subset and RTL shaping test — English for print is calmer and 500k lighter.
 - Keep the two-button bar (`Time Filters` + `Exams` disabled until `schedules.length>0`) as modals from the start, not as inline collapsibles that later become modals.
 
+## 9. Updating for a new term — don’t forget the dates
+
+See **`docs/UPDATE_CHECKLIST.md`**. Every update needs the same 4 Excel files in `app/raw-data/` (English master `ExportToExcel.xls`, Arabic patch `allcollegesarabic.xls`, plus `unirequirements.xls` + `unielectives.xls` as tag sets). The **only** manual dates are in 6 places: `app/src/utils/collegePdf.js:190` (footer `Fall 2026`), `collegePdf.js:224` (cover title), `collegePdf.js:228` (`August 14, 2026`), and `app/src/components/LanguageContext.jsx:32,44,94,106` (badge + welcome subtitles EN/AR). `app/public/data.json:version` is auto-timestamped by `convert-data.js`; `App.jsx:18` `DATA_VERSION` only when shape changes. After `npm run process-data`, run `npm run build && node ship.js` — the build is env-aware (`app/vite.config.js:6` `NETLIFY ? '/' : '/ScheduleSQU/'`), so local ship stays `/ScheduleSQU/` for Pages while Netlify CI builds `/` automatically.
+
+## 10. Netlify + Pages dual deploy (added 2026-08-14)
+
+- **Source now tracked:** `.gitignore` no longer ignores `app/` (only `app/node_modules` + `app/dist`), so Netlify can build from `app/`. `netlify.toml:1` `base = "app"` `publish = "dist"` `NODE_VERSION = "20"`.
+- **One push = two sites:** `git push` → Pages serves pre-built root, Netlify builds `app/dist` with `NETLIFY=true`.
+- **Manual:** `netlify deploy --dir app/dist --prod` after `$env:NETLIFY="true"; npm --prefix app run build` if you need an immediate prod without waiting for the Git hook.
+
 ---
-*Saved 2026-08-14 — for the next session, start from `app/src/components/CourseSelector.jsx:70` (college/department filter) and `app/src/utils/collegePdf.js:37` (portrait, department-grouped, English-only).*
+*Saved 2026-08-14 — for the next session, start from `app/src/components/CourseSelector.jsx:70` (college/department filter) and `app/src/utils/collegePdf.js:37` (portrait, department-grouped, English-only). Next term: bring the 4 Excel files and follow `docs/UPDATE_CHECKLIST.md`.*
