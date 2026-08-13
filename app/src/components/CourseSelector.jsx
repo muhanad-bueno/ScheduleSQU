@@ -1,4 +1,4 @@
-import { useState, useMemo, useEffect, useRef, memo, useCallback, useDeferredValue, useTransition } from 'react';
+import { useState, useMemo, useEffect, useRef, memo, useCallback, useDeferredValue } from 'react';
 import { Check, Plus, X, Eye } from 'lucide-react';
 import { getSectionScheduleSummary } from '../utils/timeUtils';
 import { useLanguage } from './LanguageContext';
@@ -34,11 +34,10 @@ export default memo(function CourseSelector({
 
   // Debounce + defer search for non-blocking filtering (novel: keeps input 60fps on 1290 courses)
   useEffect(() => {
-    const timer = setTimeout(() => setDebouncedSearch(searchTerm), 140);
+    const timer = setTimeout(() => setDebouncedSearch(searchTerm), 120);
     return () => clearTimeout(timer);
   }, [searchTerm]);
   const deferredSearch = useDeferredValue(debouncedSearch);
-  const [isPending] = useTransition();
 
   // Auto-switch to 'all' tab when user types
   useEffect(() => {
@@ -113,35 +112,68 @@ export default memo(function CourseSelector({
     });
   }, [sortedCourses, deferredSearch, collegeFilter, departmentFilter]);
 
-  const isSelected = useCallback((id) => selectedCourses.some(c => c.id === id), [selectedCourses]);
+  const selectedSet = useMemo(() => new Set(selectedCourses.map(c => c.id)), [selectedCourses]);
   const [previewCourse, setPreviewCourse] = useState(null);
   const inputRef = useRef(null);
-  const keepFocus = useCallback(() => {
-    if (typeof window !== 'undefined' && window.innerWidth <= 900) {
-      requestAnimationFrame(() => inputRef.current?.focus());
+
+  // Keep search header visible when keyboard opens (visualViewport shrinks)
+  const handleInputFocus = useCallback(() => {
+    if (typeof window === 'undefined') return;
+    const vv = window.visualViewport;
+    // If keyboard is open (visual viewport < layout), scroll header into view
+    if (vv && vv.height < window.innerHeight * 0.85) {
+      setTimeout(() => {
+        inputRef.current?.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+      }, 80);
     }
   }, []);
-  const handleToggleKeepFocus = useCallback((course) => {
-    onToggleCourse(course);
-    keepFocus();
-  }, [onToggleCourse, keepFocus]);
+
+  // VisualViewport-aware sheet max height — fixes bottom sheet being pushed off-screen
+  useEffect(() => {
+    const vv = window.visualViewport;
+    if (!vv) return;
+    const sidebar = document.getElementById('sidebar');
+    if (!sidebar) return;
+    const update = () => {
+      const vh = vv.height;
+      // 85% of visual viewport, capped at 680px, min 340px for usability
+      const h = Math.min(Math.max(vh * 0.85, 340), 680);
+      sidebar.style.setProperty('--sheet-h', `${h}px`);
+      sidebar.style.maxHeight = `calc(${h}px)`;
+    };
+    update();
+    vv.addEventListener('resize', update);
+    vv.addEventListener('scroll', update);
+    return () => {
+      vv.removeEventListener('resize', update);
+      vv.removeEventListener('scroll', update);
+    };
+  }, []);
 
   const closePreview = useCallback(() => setPreviewCourse(null), []);
 
   return (
     <div className="course-selector">
       <div className="selector-header">
-        <input
-          ref={inputRef}
-          type="text"
-          className="search-input"
-          placeholder={t.searchPlaceholder}
-          value={searchTerm}
-          onChange={e => setSearchTerm(e.target.value)}
-          autoCorrect="off"
-          spellCheck={false}
-          enterKeyHint="search"
-        />
+        <div className="search-wrap">
+          <input
+            ref={inputRef}
+            type="text"
+            className="search-input"
+            placeholder={t.searchPlaceholder}
+            value={searchTerm}
+            onChange={e => setSearchTerm(e.target.value)}
+            onFocus={handleInputFocus}
+            autoCorrect="off"
+            spellCheck={false}
+            enterKeyHint="search"
+          />
+          {searchTerm && (
+            <button className="search-clear" onClick={() => setSearchTerm('')} aria-label="Clear search">
+              <X size={14} />
+            </button>
+          )}
+        </div>
       </div>
 
       <div className="selector-tabs">
@@ -201,8 +233,8 @@ export default memo(function CourseSelector({
           <SearchResults
             searchTerm={deferredSearch}
             courses={filteredCourses.slice(0, 50)}
-            isSelected={isSelected}
-            onToggle={handleToggleKeepFocus}
+            selectedSet={selectedSet}
+            onToggle={onToggleCourse}
             onPreview={setPreviewCourse}
             hasFilters={collegeFilter !== 'All' || departmentFilter !== 'All'}
             t={t}
@@ -241,7 +273,7 @@ const shortCollege = (college) => {
   return map[college] || college.replace('College of ', '').slice(0, 4).toUpperCase();
 };
 
-const SearchResults = memo(function SearchResults({ searchTerm, courses, isSelected, onToggle, onPreview, hasFilters, t }) {
+const SearchResults = memo(function SearchResults({ searchTerm, courses, selectedSet, onToggle, onPreview, hasFilters, t }) {
   if (courses.length === 0) {
     return (
       <div className="empty-state">
@@ -256,7 +288,7 @@ const SearchResults = memo(function SearchResults({ searchTerm, courses, isSelec
         <CourseRow
           key={course.id}
           course={course}
-          selected={isSelected(course.id)}
+          selected={selectedSet.has(course.id)}
           onToggle={onToggle}
           onPreview={onPreview}
           t={t}

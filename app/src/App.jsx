@@ -72,6 +72,19 @@ function AppContent() {
   const [showTimeModal, setShowTimeModal] = useState(false);
   const [showExamModal, setShowExamModal] = useState(false);
   const workerRef = useRef(null);
+  const sheetStartY = useRef(null);
+
+  const handleSheetTouchStart = useCallback((e) => {
+    sheetStartY.current = e.touches[0].clientY;
+  }, []);
+  const handleSheetTouchEnd = useCallback((e) => {
+    if (sheetStartY.current == null) return;
+    const dy = e.changedTouches[0].clientY - sheetStartY.current;
+    const sidebar = document.getElementById('sidebar');
+    const atTop = !sidebar || sidebar.scrollTop <= 4;
+    if (dy > 90 && atTop) setShowSidebar(false);
+    sheetStartY.current = null;
+  }, []);
 
   useEffect(() => {
     try {
@@ -303,8 +316,18 @@ function AppContent() {
           </span>
         </button>
 
-        <aside id="sidebar" className={`sidebar ${showSidebar ? 'active' : ''}`}>
-          <div className="sheet-handle" aria-hidden="true" />
+        <aside
+          id="sidebar"
+          className={`sidebar ${showSidebar ? 'active' : ''}`}
+          onTouchStart={handleSheetTouchStart}
+          onTouchEnd={handleSheetTouchEnd}
+        >
+          <div
+            className="sheet-handle"
+            aria-hidden="true"
+            onTouchStart={handleSheetTouchStart}
+            onTouchEnd={handleSheetTouchEnd}
+          />
           <div className="sidebar-mobile-header">
             <h3>{t.manageCourses}</h3>
             <button onClick={() => setShowSidebar(false)} className="close-sidebar-btn">

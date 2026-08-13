@@ -470,13 +470,23 @@ a:focus-visible,
 }
 
 .selector-header {
-  padding: 1rem;
+  padding: 0.85rem 1rem;
   border-bottom: 1px solid var(--card-border);
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background: var(--card);
+}
+
+.search-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
 }
 
 .search-input {
   width: 100%;
-  padding: 0.75rem 1rem;
+  padding: 0.75rem 2.2rem 0.75rem 1rem;
   background: var(--bg);
   border: 1px solid var(--card-border);
   border-radius: var(--radius);
@@ -489,6 +499,26 @@ a:focus-visible,
   box-shadow: 0 0 0 3px var(--accent-soft);
 }
 
+.search-clear {
+  position: absolute;
+  right: 0.4rem;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-sm);
+  color: var(--text-dim);
+  background: var(--bg-soft);
+  border: 1px solid var(--card-border);
+  flex-shrink: 0;
+}
+
+.search-clear:hover {
+  background: var(--card);
+  color: var(--text);
+}
+
 .selector-tabs {
   display: flex;
   border-bottom: 1px solid var(--card-border);
@@ -496,12 +526,17 @@ a:focus-visible,
 
 .tab {
   flex: 1;
-  padding: 0.75rem;
+  min-height: 44px;
+  padding: 0.7rem 0.5rem;
   text-align: center;
-  font-weight: 500;
+  font-weight: 600;
+  font-size: 0.88rem;
   color: var(--text-dim);
   border-bottom: 2px solid transparent;
-  transition: all 0.2s;
+  transition: all 0.15s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .tab:hover {
@@ -512,6 +547,7 @@ a:focus-visible,
 .tab.active {
   color: var(--accent-strong);
   border-bottom-color: var(--accent-strong);
+  background: var(--accent-tint);
 }
 
 .filter-bar {
@@ -519,9 +555,17 @@ a:focus-visible,
   gap: 0.5rem;
   padding: 0.6rem 0.5rem;
   align-items: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
   border-bottom: 1px solid var(--card-border);
   background: var(--bg-soft);
+  overscroll-behavior-x: contain;
+}
+
+.filter-bar::-webkit-scrollbar {
+  display: none;
 }
 
 .filter-select {
@@ -600,26 +644,20 @@ body.rtl .filter-select {
   display: flex;
   flex-direction: column;
   gap: 4px;
-  contain: layout paint style;
-  content-visibility: auto;
-  contain-intrinsic-size: 0 800px;
 }
 
 .course-item {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
+  padding: 0.9rem 0.85rem;
   border: 1px solid transparent;
   border-radius: var(--radius);
   background: var(--card);
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.35rem;
   cursor: pointer;
-  transition: background-color 0.15s ease, border-color 0.15s ease, transform 0.12s ease;
-  contain: layout paint style;
-  content-visibility: auto;
-  contain-intrinsic-size: 0 72px;
-  will-change: transform;
+  transition: background-color 0.12s ease, border-color 0.12s ease;
+  min-height: 64px;
 }
 
 .course-item:last-child {
@@ -757,7 +795,31 @@ body.rtl .filter-select {
 
 @media (max-width: 900px) {
   .peek-btn {
-    display: none;
+    opacity: 0.35;
+    pointer-events: auto;
+    background: var(--bg-soft);
+  }
+  .course-item .peek-btn {
+    opacity: 0.45;
+  }
+  .course-item:hover .peek-btn,
+  .course-item:focus-within .peek-btn {
+    opacity: 1;
+  }
+  .course-name {
+    max-width: 150px;
+    font-size: 0.82rem;
+  }
+  .course-meta {
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 0.68rem;
+  }
+  .course-item {
+    padding: 0.8rem 0.75rem;
+    min-height: 62px;
   }
 }
 
@@ -777,6 +839,13 @@ body.rtl .filter-select {
 .clear-all-btn:hover {
   background: rgba(239, 68, 68, 0.10);
   border-color: rgba(239, 68, 68, 0.22);
+}
+
+.course-list .clear-all-btn {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  backdrop-filter: blur(4px);
 }
 
 .selected-header {
@@ -1536,8 +1605,9 @@ body.rtl .filter-select {
     right: 0;
     bottom: 0;
     top: auto;
-    height: min(85dvh, 680px);
-    height: min(85vh, 680px);
+    height: var(--sheet-h, min(85dvh, 680px));
+    height: var(--sheet-h, min(85vh, 680px));
+    max-height: calc(100dvh - 12px - env(safe-area-inset-top, 0px));
     width: 100%;
     max-width: none;
     background: var(--card);
@@ -1554,6 +1624,12 @@ body.rtl .filter-select {
     display: flex;
     flex-direction: column;
     padding-bottom: max(0.75rem, env(safe-area-inset-bottom));
+  }
+
+  /* Dim header when sheet is open — keep focus on sheet */
+  body:has(.sidebar.active) .app-header {
+    opacity: 0.55;
+    transition: opacity 0.2s ease;
   }
 
   .sheet-handle {
@@ -2677,31 +2753,31 @@ body.rtl .filter-select {
     justify-content: center;
   }
   .filter-bar {
-    flex-direction: column;
-    align-items: stretch;
-    gap: 0.6rem;
-    padding: 0.75rem;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.6rem 0.5rem;
+    overflow-x: auto;
   }
   .filter-select {
-    min-width: 0;
-    width: 100%;
-    min-height: 44px;
-    padding: 0.65rem 1.9rem 0.65rem 0.75rem;
-    font-size: 0.85rem;
-  }
-  body.rtl .filter-select {
-    padding: 0.65rem 0.75rem 0.65rem 1.9rem;
-  }
-  .filter-count {
-    margin-inline-start: 0;
-    text-align: center;
+    min-width: 130px;
+    width: auto;
+    flex: 0 0 auto;
+    min-height: 38px;
+    padding: 0.5rem 1.7rem 0.5rem 0.7rem;
     font-size: 0.78rem;
   }
+  body.rtl .filter-select {
+    padding: 0.5rem 0.7rem 0.5rem 1.7rem;
+  }
+  .filter-count {
+    margin-inline-start: auto;
+    text-align: right;
+    font-size: 0.72rem;
+  }
   .filter-clear {
-    min-height: 44px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    min-height: 32px;
+    flex-shrink: 0;
   }
   .app-header {
     gap: 0.5rem;
