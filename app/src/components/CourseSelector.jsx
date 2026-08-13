@@ -305,7 +305,7 @@ const SearchResults = memo(function SearchResults({ searchTerm, courses, selecte
   }
   return (
     <div className="course-list">
-      {courses.map(course => (
+      {courses.map((course, idx) => (
         <CourseRow
           key={course.id}
           course={course}
@@ -313,13 +313,14 @@ const SearchResults = memo(function SearchResults({ searchTerm, courses, selecte
           onToggle={onToggle}
           onPreview={onPreview}
           t={t}
+          style={{ animationDelay: `${Math.min(idx, 6) * 18}ms` }}
         />
       ))}
     </div>
   );
 });
 
-const CourseRow = memo(function CourseRow({ course, selected, onToggle, onPreview, t }) {
+const CourseRow = memo(function CourseRow({ course, selected, onToggle, onPreview, t, style }) {
   const { lang } = useLanguage();
   if (!course) return null;
   const displayName = lang === 'ar' && course.nameAr ? course.nameAr : (course.nameEn || course.name);
@@ -396,7 +397,7 @@ const CourseRow = memo(function CourseRow({ course, selected, onToggle, onPrevie
       onPointerLeave={clearTimer}
       onPointerCancel={clearTimer}
       onContextMenu={(e) => { if (longPressedRef.current) e.preventDefault(); }}
-      style={{ touchAction: 'pan-y' }}
+      style={{ touchAction: 'pan-y', ...style }}
     >
       <div className="course-info">
         <div className="course-code-row">

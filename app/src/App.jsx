@@ -1,5 +1,5 @@
 import { useState, useEffect, useCallback, useMemo, useRef } from 'react';
-import { Edit3, Info, Clock, ClipboardList } from 'lucide-react';
+import { Edit3, Info, Clock, ClipboardList, X } from 'lucide-react';
 import { loadCourses } from './utils/dataLoader';
 import { generateSchedules } from './utils/scheduler';
 import { parseTimeSlots } from './utils/timeUtils';
@@ -329,9 +329,14 @@ function AppContent() {
             onTouchEnd={handleSheetTouchEnd}
           />
           <div className="sidebar-mobile-header">
-            <h3>{t.manageCourses}</h3>
-            <button onClick={() => setShowSidebar(false)} className="close-sidebar-btn">
-              {t.close}
+            <div className="sidebar-title-group">
+              <h3>{t.manageCourses}</h3>
+              <span className="sidebar-subtitle">
+                {selectedCourses.length > 0 ? `${selectedCourses.length} · ` : ''}{t.showing} {allCourses.length ? `${Math.min(allCourses.length, 1290)}` : ''}
+              </span>
+            </div>
+            <button onClick={() => setShowSidebar(false)} className="close-sidebar-btn" aria-label={t.close}>
+              <X size={18} />
             </button>
           </div>
           <CourseSelector
