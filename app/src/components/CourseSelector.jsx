@@ -40,15 +40,12 @@ export default memo(function CourseSelector({
   }, [searchTerm]);
   const deferredSearch = useDeferredValue(debouncedSearch);
 
-  // Auto-switch to 'all' tab when user types + collapse filters for speed
+  // Collapse filters while typing for speed
   useEffect(() => {
-    if (searchTerm.trim() && activeTab === 'selected') {
-      setActiveTab('all');
-    }
     if (searchTerm.trim() && filterOpen) {
       setFilterOpen(false);
     }
-  }, [searchTerm, activeTab, filterOpen]);
+  }, [searchTerm, filterOpen]);
 
   const colleges = useMemo(() => {
     const set = new Set(courses.filter(Boolean).map(c => c.college).filter(Boolean));
@@ -117,6 +114,24 @@ export default memo(function CourseSelector({
   }, [sortedCourses, deferredSearch, collegeFilter, departmentFilter]);
 
   const selectedSet = useMemo(() => new Set(selectedCourses.map(c => c.id)), [selectedCourses]);
+
+  // Apply the same filters to selected courses
+  const filteredSelectedCourses = useMemo(() => {
+    let base = selectedCourses.filter(Boolean);
+    if (collegeFilter !== 'All') base = base.filter(c => c.college === collegeFilter);
+    if (departmentFilter !== 'All') base = base.filter(c => c.department === departmentFilter);
+    if (deferredSearch.trim()) {
+      const terms = deferredSearch.toLowerCase().split(/\s+/).filter(Boolean);
+      base = base.filter(c => {
+        const code = (c.code || '').toLowerCase();
+        const nameEn = (c.nameEn || c.name || '').toLowerCase();
+        const nameAr = (c.nameAr || '').toLowerCase();
+        return terms.every(term => code.includes(term) || nameEn.includes(term) || nameAr.includes(term));
+      });
+    }
+    return base;
+  }, [selectedCourses, deferredSearch, collegeFilter, departmentFilter]);
+
   const [previewCourse, setPreviewCourse] = useState(null);
   const inputRef = useRef(null);
 
@@ -184,50 +199,48 @@ export default memo(function CourseSelector({
           onClick={() => setActiveTab('selected')}
         >
           <span>{t.tabs.selected}</span>
-          <span className={`tab-badge ${selectedCourses.length > 0 ? 'has' : ''}`}>{selectedCourses.length}</span>
+          <span className={`tab-badge ${selectedCourses.length > 0 ? 'has' : ''}`}>{filteredSelectedCourses.length}</span>
         </button>
       </div>
 
-      {activeTab === 'all' && (
-        <div className={`filter-collapsible ${filterOpen ? 'open' : ''}`}>
-          <div className="filter-bar">
+      <div className={`filter-collapsible ${filterOpen ? 'open' : ''}`}>
+        <div className="filter-bar">
+          <select
+            className="filter-select"
+            value={collegeFilter}
+            onChange={(e) => setCollegeFilter(e.target.value)}
+            aria-label="Filter by college"
+          >
+            <option value="All">{t.filterAllColleges}</option>
+            {colleges.filter(c => c !== 'All').map(col => (
+              <option key={col} value={col}>{displayCollege(col)}</option>
+            ))}
+          </select>
+          {collegeFilter !== 'All' && departments.length > 1 && (
             <select
               className="filter-select"
-              value={collegeFilter}
-              onChange={(e) => setCollegeFilter(e.target.value)}
-              aria-label="Filter by college"
+              value={departmentFilter}
+              onChange={(e) => setDepartmentFilter(e.target.value)}
+              aria-label="Filter by department"
             >
-              <option value="All">{t.filterAllColleges}</option>
-              {colleges.filter(c => c !== 'All').map(col => (
-                <option key={col} value={col}>{displayCollege(col)}</option>
+              <option value="All">{lang === 'ar' ? 'كل الأقسام' : 'All Departments'}</option>
+              {departments.filter(d => d !== 'All').map(dept => (
+                <option key={dept} value={dept}>{displayDepartment(dept)}</option>
               ))}
             </select>
-            {collegeFilter !== 'All' && departments.length > 1 && (
-              <select
-                className="filter-select"
-                value={departmentFilter}
-                onChange={(e) => setDepartmentFilter(e.target.value)}
-                aria-label="Filter by department"
-              >
-                <option value="All">{lang === 'ar' ? 'كل الأقسام' : 'All Departments'}</option>
-                {departments.filter(d => d !== 'All').map(dept => (
-                  <option key={dept} value={dept}>{displayDepartment(dept)}</option>
-                ))}
-              </select>
+          )}
+          <div className="filter-bar-foot">
+            <span className="filter-count" dir="ltr">
+              {Math.min(filteredCourses.length, 50)} / {courses.length}
+            </span>
+            {(collegeFilter !== 'All' || departmentFilter !== 'All') && (
+              <button className="filter-clear" onClick={() => { setCollegeFilter('All'); setDepartmentFilter('All'); }}>
+                {t.clearFilters}
+              </button>
             )}
-            <div className="filter-bar-foot">
-              <span className="filter-count" dir="ltr">
-                {Math.min(filteredCourses.length, 50)} / {courses.length}
-              </span>
-              {(collegeFilter !== 'All' || departmentFilter !== 'All') && (
-                <button className="filter-clear" onClick={() => { setCollegeFilter('All'); setDepartmentFilter('All'); }}>
-                  {t.clearFilters}
-                </button>
-              )}
-            </div>
           </div>
         </div>
-      )}
+      </div>
 
       <div className="selector-content">
         {activeTab === 'all' ? (
@@ -242,11 +255,12 @@ export default memo(function CourseSelector({
           />
         ) : (
           <SelectedCourses
-            courses={selectedCourses}
+            courses={filteredSelectedCourses}
             sectionFilters={sectionFilters}
             onToggle={onToggleCourse}
             onToggleSection={onToggleSection}
             onClearAll={onClearAll}
+            hasFilters={collegeFilter !== 'All' || departmentFilter !== 'All'}
             t={t}
           />
         )}
@@ -414,10 +428,15 @@ const CourseRow = memo(function CourseRow({ course, selected, onToggle, onPrevie
   );
 });
 
-const SelectedCourses = memo(function SelectedCourses({ courses, sectionFilters, onToggle, onToggleSection, onClearAll, t }) {
+const SelectedCourses = memo(function SelectedCourses({ courses, sectionFilters, onToggle, onToggleSection, onClearAll, hasFilters, t }) {
   const { lang } = useLanguage();
   if (courses.length === 0) {
-    return <div className="empty-state">{t.noCoursesSelected}</div>;
+    return (
+      <div className="empty-state">
+        <div>{hasFilters ? t.noMatchesFound : t.noCoursesSelected}</div>
+        {hasFilters && <div style={{ marginTop: '0.5rem', fontSize: '0.8rem', opacity: 0.8 }}>{t.clearFilters} ↓</div>}
+      </div>
+    );
   }
 
   return (
