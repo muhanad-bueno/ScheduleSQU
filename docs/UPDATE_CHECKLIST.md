@@ -42,8 +42,8 @@ Also `app/public/data.json:version` is auto-set to `Date.now()` by `convert-data
 
 ```bash
 cd app
-npm run build          # Vite builds with base /ScheduleSQU/ (no NETLIFY env)
-node ship.js           # copies dist/ → repo root
+npm run build          # Vite builds with base /schedule4squ/ (no NETLIFY env)
+node ship.js           # copies dist/ -> repo root
 cd ..
 git add -A
 git commit -m "Update timetables: Spring 2027 — Aug 14 → Jan 10"
@@ -52,7 +52,7 @@ git push               # GitHub Pages + Netlify (NETLIFY=true) auto-build with b
 
 ## 5) Verify
 
-- Hard-refresh `https://muhanad-bueno.github.io/ScheduleSQU/` and `https://schedulesqu.netlify.app` — check PDF cover date, welcome subtitle, badge.
+- Hard-refresh `https://muhanad-bueno.github.io/schedule4squ/` and `https://schedulesqu.netlify.app` — check PDF cover date, welcome subtitle, badge.
 - Download General PDF → check footer `Fall 2026` → new term, page 2 TOC, `40 / 1290` → new count.
 
 ---
