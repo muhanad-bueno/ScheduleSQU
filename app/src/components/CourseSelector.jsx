@@ -40,13 +40,6 @@ export default memo(function CourseSelector({
   }, [searchTerm]);
   const deferredSearch = useDeferredValue(debouncedSearch);
 
-  // Collapse filters while typing for speed
-  useEffect(() => {
-    if (searchTerm.trim() && filterOpen) {
-      setFilterOpen(false);
-    }
-  }, [searchTerm, filterOpen]);
-
   const colleges = useMemo(() => {
     const set = new Set(courses.filter(Boolean).map(c => c.college).filter(Boolean));
     return ['All', ...Array.from(set).sort()];
@@ -162,7 +155,11 @@ export default memo(function CourseSelector({
               className="search-input"
               placeholder={t.searchPlaceholder}
               value={searchTerm}
-              onChange={e => setSearchTerm(e.target.value)}
+              onChange={e => {
+                setSearchTerm(e.target.value);
+                // Collapse the filter panel while typing so results stay fast
+                if (e.target.value.trim()) setFilterOpen(false);
+              }}
               onFocus={handleInputFocus}
               dir="auto"
               autoCorrect="off"
