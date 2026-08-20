@@ -2,7 +2,7 @@
   "name": "schedulesqu",
   "private": true,
   "version": "2.0.0",
-  "homepage": "https://muhanad-bueno.github.io/ScheduleSQU",
+  "homepage": "https://muhanad-bueno.github.io/schedule4squ",
   "type": "module",
   "scripts": {
     "dev": "vite",

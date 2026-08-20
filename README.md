@@ -1,8 +1,8 @@
-# ScheduleSQU
+# Schedule4SQU
 
 A bilingual (English / Arabic) schedule builder for Sultan Qaboos University. Pick your courses across all colleges and get every timetable that actually works, no spreadsheet juggling.
 
-**Live:** https://muhanad-bueno.github.io/ScheduleSQU/
+**Live:** https://schedulesqu.netlify.app/ · [GitHub Pages](https://muhanad-bueno.github.io/schedule4squ/)
 
 ## What it does
 
@@ -53,15 +53,15 @@ npm run dev
 
 ## Deploying
 
-**GitHub Pages** (https://muhanad-bueno.github.io/ScheduleSQU/) serves the pre-built root (`index.html` + `assets/`). **Netlify** (https://schedulesqu.netlify.app) builds from `app/` on every push.
+**GitHub Pages** (https://muhanad-bueno.github.io/schedule4squ/) serves the pre-built root (`index.html` + `assets/`). **Netlify** (https://schedulesqu.netlify.app) builds from `app/` on every push.
 
-Vite base is env-aware: `netlify.toml` + `app/vite.config.js:6` → `base: NETLIFY ? '/' : '/ScheduleSQU/'`.
+Vite base is env-aware: `netlify.toml` + `app/vite.config.js:7` → `base: NETLIFY ? '/' : '/schedule4squ/'`.
 
 ```bash
 # local dev
 cd app && npm run dev
 
-# ship to GitHub Pages (builds with base /ScheduleSQU/)
+# ship to GitHub Pages (builds with base /schedule4squ/)
 cd app
 npm run build        # or npm run deploy (build + ship)
 node ship.js         # copies dist/ -> repo root
